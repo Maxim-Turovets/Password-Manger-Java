@@ -19,7 +19,9 @@ public class Main extends Application {
 
     public static void main(String[] args) {
 
-        //Main program
-        launch(args);
+        ConnectBase ob= new ConnectBase();
+        ob.open();
+
+       // launch(args);
     }
 }
