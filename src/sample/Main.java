@@ -17,11 +17,12 @@ public class Main extends Application {
     }
 
 
+
     public static void main(String[] args) {
 
-        ConnectBase ob= new ConnectBase();
-        ob.open();
+        //launch(args);
+        Controller b = new Controller();
 
-       // launch(args);
+        b.open();
     }
 }
