@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.util.ResourceBundle;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,6 +20,9 @@ import javafx.stage.Stage;
 
 
 public class Controller {
+
+
+
 
     @FXML
     private Button ButtonRegister;
@@ -38,7 +44,7 @@ public class Controller {
             ob.AddPass(PassText.getText());
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("account.fxml"));
+            loader.setLocation(getClass().getResource("main.fxml"));
 
             try {
                 loader.load();
