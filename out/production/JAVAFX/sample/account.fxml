@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AccountController">
+   <children>
+      <ComboBox fx:id="AccountList" layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="583.0" promptText="Account">
+         <effect>
+            <DropShadow color="#d35a5a" />
+         </effect>
+      </ComboBox>
+   </children>
+</AnchorPane>

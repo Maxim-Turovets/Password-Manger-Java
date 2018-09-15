@@ -36,7 +36,7 @@ public class ConnectToBase {
         }
     }
 
-    public   Connection  AddPass(String pass){
+    public   int  AddPass(String pass){
         try {
             Class.forName("org.sqlite.JDBC");
 
@@ -55,12 +55,38 @@ public class ConnectToBase {
 
             System.out.print(id);
 
-            return conn;
+            return id;
         }
         catch (Exception e)
         {
             System.out.print("ERROR");
-            return  null;
+            return  0;
+        }
+    }
+
+    public void Register (String  RegisterPass)
+    {
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn =  DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Макс\\Documents\\GitHub\\Password-Manger-Java\\src\\sample\\DataBase.db");
+
+
+            Statement state = conn.createStatement();
+            ResultSet res;
+
+
+            String stringSQL = "INSERT INTO PasswordTable (Password) VALUES ('" + RegisterPass +"');" ;
+
+
+            res = state.executeQuery(stringSQL);
+
+            System.out.print(stringSQL);
+
+        }
+        catch (Exception e)
+        {
+            System.out.print("ERROR");
         }
     }
 }

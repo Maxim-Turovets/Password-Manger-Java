@@ -1,11 +1,16 @@
 package sample;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.stage.Stage;
 
 
 public class Controller {
@@ -19,16 +24,54 @@ public class Controller {
     @FXML
     private Button ButtonLogin;
 
+
+
+
     @FXML
     void initialize() {
-  ButtonLogin.setOnAction(event -> {
-  //    System.out.print(PassText.getText());
+        ButtonLogin.setOnAction(event -> {
+            ConnectToBase ob = new ConnectToBase();
+            ob.AddPass(PassText.getText());
 
-      ConnectToBase ob= new ConnectToBase();
-   //   System.out.print(PassText.getText());
 
-      ob.AddPass(PassText.getText());
-  });
+                ButtonLogin.getScene().getWindow().hide();
+
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("account.fxml"));
+
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.showAndWait();
+            });
+
+
+        ButtonRegister.setOnAction(event -> {
+
+            ButtonRegister.getScene().getWindow().hide();
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("register.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
+        });
+
+
     }
 
 }
