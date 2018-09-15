@@ -1,38 +1,26 @@
 package sample;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
 
 public class Controller {
-    public static Connection open()
-    {
-        try {
-            Class.forName("org.sqlite.JDBC");
 
-            Connection conn =  DriverManager.getConnection("jdbc:sqlite:C:\\DataBase.db");
+    @FXML
+    private ResourceBundle resources;
 
+    @FXML
+    private URL location;
 
-            Statement state = conn.createStatement();
-            ResultSet res;
+ 
 
-            res = state.executeQuery("SELECT Name From Manager ");
-            String names;
-            names =  res.getString(1);
+    @FXML
+    void initialize() {
 
 
-            String age = state.executeQuery("SELECT Pass From Manager ").getString(1);
 
-            System.out.print(names+ "   ");
-            System.out.print(age);
-            return conn;
-        }
-        catch (Exception e)
-        {
-            System.out.print("ERROR");
-            return  null;
-        }
     }
+
 }
