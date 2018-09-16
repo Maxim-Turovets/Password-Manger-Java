@@ -22,7 +22,7 @@ import javafx.stage.Stage;
 public class Controller {
 
 
-
+    public static int index;
 
     @FXML
     private Button ButtonRegister;
@@ -42,7 +42,9 @@ public class Controller {
            ButtonLogin.setOnAction(event -> {
                if(PassText.getText().isEmpty()==false) {    // если строка не пустая
                    ConnectToBase ob = new ConnectToBase();
-                   ob.AddPass(PassText.getText());
+                   index=ob.AddPass(PassText.getText());
+                  // System.out.print(ConnectToBase.GetValue());
+
                    if(ob.confirmation==true) {            // если пароль правильный
 
                        FXMLLoader loader = new FXMLLoader();

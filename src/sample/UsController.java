@@ -15,6 +15,10 @@ import javafx.scene.control.TableColumn;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class UsController {
 
@@ -48,8 +52,8 @@ public class UsController {
 
           //  AddAccount.getScene().getWindow().hide();
 
-            ConnectToBase ob= new ConnectToBase();
-          //  ob.CreateTable();
+           // ConnectToBase ob= new ConnectToBase();
+        //    ob.AddInformationToTableAccount(1,"aaaa","aaaa","asdfdf");
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("addaccount.fxml"));
 
@@ -79,11 +83,16 @@ public class UsController {
     // подготавливаем данные для таблицы
     // вы можете получать их с базы данных
     private void initData() {
-        usersData.add(new User(1, "Alex", "qwerty", "alex@mail.com"));
-        usersData.add(new User(2, "Bob", "dsfsdfw", "bob@mail.com"));
-        usersData.add(new User(3, "Jeck", "dsfdsfwe", "Jeck@mail.com"));
-        usersData.add(new User(4, "Mike", "iueern", "mike@mail.com"));
+
+        ConnectToBase ob = new ConnectToBase();
+        ConnectToBase obw = new ConnectToBase();
+        obw.GetValue();
+        //System.out.print("====   "+ConnectToBase.value+"     =========");
+
+         for (int i=0;i<ConnectToBase.value;i++)
+             usersData.add(new User(i+1, ob.getLogin(i+1), ob.getPass(i+1), ob.getEmail(i+1)));
 
     }
+
 
 }

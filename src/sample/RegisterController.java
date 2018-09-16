@@ -27,9 +27,10 @@ public class RegisterController {
                 if(RegisterPass.getText().trim() =="")
                 System.out.print(RegisterPass.getText());
                 ConnectToBase ob = new ConnectToBase();
-                ob.CreateTable(ob.Register(RegisterPass.getText()));
+                Controller.index=ob.Register(RegisterPass.getText());
+                ob.CreateTable(Controller.index);
 
-                //RegisterPass.getScene().getWindow().hide();
+
 
                 FXMLLoader loader = new FXMLLoader();
                 loader.setLocation(getClass().getResource("main.fxml"));
