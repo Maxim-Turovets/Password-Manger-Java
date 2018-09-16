@@ -31,6 +31,7 @@ public class RegisterController {
 
                 ConnectToBase ob = new ConnectToBase();
                 ob.Register(RegisterPass.getText());
+                ob.CreateTable();
 
                 RegisterPass.getScene().getWindow().hide();
 
@@ -47,6 +48,8 @@ public class RegisterController {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.showAndWait();*/
+
+
             }
         });
 

@@ -7,6 +7,7 @@ import java.sql.Statement;
 
 public class ConnectToBase {
 
+
     public boolean confirmation;
 
     public static Connection open()
@@ -56,7 +57,7 @@ public class ConnectToBase {
             int id = res.getInt(1);
             this.confirmation=true;
 
-            System.out.print(id + " Enter Login");
+           // System.out.print(id + " Enter Login");
 
             return id;
         }
@@ -89,6 +90,50 @@ public class ConnectToBase {
             } catch (Exception e) {
                 System.out.print("ERROR");
             }
+        }
+    }
+
+    public void CreateTable ()
+    {
+
+
+
+        try {
+                Class.forName("org.sqlite.JDBC");
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser1.db");
+                 Statement state = conn.createStatement();
+               String stringSQL = "CREATE TABLE UserTable ( id INTEGER PRIMARY KEY AUTOINCREMENT ,login Varchar (30),   password Varchar (30),   email Varchar (30))";
+
+            System.out.print(stringSQL);
+
+                ResultSet res = state.executeQuery(stringSQL);
+
+            } catch (Exception e) {
+                System.out.print("er Create Table");
+            }
+
+    }
+
+    public void AddInformationToTableAccount (String log , String pass ,String ema)
+    {
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser1.db");
+
+
+            Statement state = conn.createStatement();
+
+            String stringSQL = "INSERT INTO  UserTable ( login,password,email) VALUES  ("+"'" +log+"','"+pass+"','"+ema+"')";
+            System.out.print(stringSQL);
+            ResultSet res = state.executeQuery(stringSQL);
+           //  boolean res= state.execute(stringSQL);
+
+
+
+
+        } catch (Exception e) {
+            System.out.print("er Add inf");
         }
     }
 }

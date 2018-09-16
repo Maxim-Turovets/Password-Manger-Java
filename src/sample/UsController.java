@@ -3,11 +3,18 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
 import javafx.scene.control.TableColumn;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class UsController {
 
@@ -28,10 +35,36 @@ public class UsController {
     @FXML
     private TableColumn<User, String> emailColumn;
 
+    @FXML
+    private Button AddAccount;
+
     // инициализируем форму данными
     @FXML
     private void initialize() {
         initData();
+
+        AddAccount.setOnAction(event -> {
+
+
+          //  AddAccount.getScene().getWindow().hide();
+
+            ConnectToBase ob= new ConnectToBase();
+            ob.CreateTable();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("addaccount.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
+        });
+
 
         // устанавливаем тип и значение которое должно хранится в колонке
         idColumn.setCellValueFactory(new PropertyValueFactory<User, Integer>("id"));
