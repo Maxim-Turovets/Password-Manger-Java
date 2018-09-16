@@ -219,7 +219,7 @@ public class ConnectToBase {
 
             String stringSQL = "SELECT COUNT() FROM UserTable";
             ConnectToBase.value=state.executeQuery(stringSQL).getInt(1);
-           // ConnectToBase.value=12;
+
             System.out.print("====   "+ConnectToBase.value+"     =========");
 
 

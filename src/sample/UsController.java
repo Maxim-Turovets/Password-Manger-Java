@@ -45,15 +45,12 @@ public class UsController {
     // инициализируем форму данными
     @FXML
     private void initialize() {
-        initData();
 
+        initData();
         AddAccount.setOnAction(event -> {
 
 
-          //  AddAccount.getScene().getWindow().hide();
 
-           // ConnectToBase ob= new ConnectToBase();
-        //    ob.AddInformationToTableAccount(1,"aaaa","aaaa","asdfdf");
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("addaccount.fxml"));
 
@@ -78,21 +75,23 @@ public class UsController {
 
         // заполняем таблицу данными
         tableUsers.setItems(usersData);
+
+
     }
-
-    // подготавливаем данные для таблицы
-    // вы можете получать их с базы данных
+    
     private void initData() {
-
+        int f=0;
         ConnectToBase ob = new ConnectToBase();
-        ConnectToBase obw = new ConnectToBase();
-        obw.GetValue();
-        //System.out.print("====   "+ConnectToBase.value+"     =========");
+        ConnectToBase obj = new ConnectToBase();
+        obj.GetValue();
+
 
          for (int i=0;i<ConnectToBase.value;i++)
              usersData.add(new User(i+1, ob.getLogin(i+1), ob.getPass(i+1), ob.getEmail(i+1)));
 
     }
+
+
 
 
 }
