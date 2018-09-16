@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="DataBase.db" uuid="b29e3b53-4396-498d-9b6d-46af68207a5f">
+    <data-source source="LOCAL" name="DataBase.db" uuid="98af7378-449f-4561-8476-f4f80b1c0aa9">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Макс\Documents\GitHub\Password-Manger-Java\src\sample\DataBase.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:DataBase.db</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>
