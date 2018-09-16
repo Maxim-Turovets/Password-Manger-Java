@@ -39,43 +39,48 @@ public class Controller {
     @FXML
     void initialize() {
 
-        ButtonLogin.setOnAction(event -> {
-            ConnectToBase ob = new ConnectToBase();
-            ob.AddPass(PassText.getText());
+           ButtonLogin.setOnAction(event -> {
+               if(PassText.getText().isEmpty()==false) {    // если строка не пустая
+                   ConnectToBase ob = new ConnectToBase();
+                   ob.AddPass(PassText.getText());
+                   if(ob.confirmation==true) {            // если пароль правильный
 
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("main.fxml"));
+                       FXMLLoader loader = new FXMLLoader();
+                       loader.setLocation(getClass().getResource("main.fxml"));
 
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+                       try {
+                           loader.load();
+                       } catch (IOException e) {
+                           e.printStackTrace();
+                       }
 
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
-        });
+                       Parent root = loader.getRoot();
+                       Stage stage = new Stage();
+                       stage.setScene(new Scene(root));
+                       stage.showAndWait();
+                   }
+               }
+           });
 
 
         ButtonRegister.setOnAction(event -> {
 
-            ButtonRegister.getScene().getWindow().hide();
+                ButtonRegister.getScene().getWindow().hide();
 
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("register.fxml"));
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("register.fxml"));
 
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.showAndWait();
+
         });
 
 

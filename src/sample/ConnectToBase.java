@@ -7,6 +7,8 @@ import java.sql.Statement;
 
 public class ConnectToBase {
 
+    public boolean confirmation;
+
     public static Connection open()
     {
         try {
@@ -52,13 +54,15 @@ public class ConnectToBase {
 
             res = state.executeQuery(stringSQL);
             int id = res.getInt(1);
+            this.confirmation=true;
 
-            System.out.print(id);
+            System.out.print(id + " Enter Login");
 
             return id;
         }
         catch (Exception e)
         {
+            this.confirmation=false;
             System.out.print("ERROR");
             return  0;
         }
@@ -66,27 +70,25 @@ public class ConnectToBase {
 
     public void Register (String  RegisterPass)
     {
-        try {
-            Class.forName("org.sqlite.JDBC");
+        if(RegisterPass.isEmpty()==false) {
+            try {
 
-            Connection conn =  DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Макс\\Documents\\GitHub\\Password-Manger-Java\\src\\sample\\DataBase.db");
+                Class.forName("org.sqlite.JDBC");
 
-
-            Statement state = conn.createStatement();
-            ResultSet res;
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Макс\\Documents\\GitHub\\Password-Manger-Java\\src\\sample\\DataBase.db");
 
 
-            String stringSQL = "INSERT INTO PasswordTable (Password) VALUES ('" + RegisterPass +"');" ;
+                Statement state = conn.createStatement();
+
+                String stringSQL = "INSERT INTO PasswordTable (Password) VALUES ('" + RegisterPass + "')";
 
 
-            res = state.executeQuery(stringSQL);
+                ResultSet res = state.executeQuery(stringSQL);
 
-            System.out.print(stringSQL);
 
-        }
-        catch (Exception e)
-        {
-            System.out.print("ERROR");
+            } catch (Exception e) {
+                System.out.print("ERROR");
+            }
         }
     }
 }

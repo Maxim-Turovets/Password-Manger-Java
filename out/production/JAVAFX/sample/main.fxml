@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="624.0"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="sample.UsController">
     <children>
-      <AnchorPane prefHeight="131.0" prefWidth="699.0" style="-fx-background-color: #088A08;" />
-      <AnchorPane layoutX="1.0" layoutY="131.0" prefHeight="339.0" prefWidth="700.0" style="-fx-background-color: #F5F6CE;">
-         <children>
-              <!-- Таблица в которую мы будем выводит наш pojo -->
-              <TableView fx:id="tableUsers" layoutX="35.0" prefHeight="324.0" prefWidth="630.0">
-                  <columns>
-                      <!-- Колонки таблицы -->
-                      <TableColumn fx:id="idColumn" prefWidth="80.0" text="№" />
-                      <TableColumn fx:id="loginColumn" prefWidth="150.0" text="Login" />
-                      <TableColumn fx:id="passwordColumn" prefWidth="150.0" text="Password" />
-                      <TableColumn fx:id="emailColumn" prefWidth="220.0" text="Email" />
-                  </columns>
-              </TableView>
-         </children>
-      </AnchorPane>
+        <!-- Таблица в которую мы будем выводит наш pojo -->
+        <TableView fx:id="tableUsers" layoutX="12.0" layoutY="62.0" prefHeight="324.0" prefWidth="600.0">
+            <columns>
+                <!-- Колонки таблицы -->
+                <TableColumn prefWidth="80.0" text="№" fx:id="idColumn" />
+                <TableColumn prefWidth="150.0" text="Login" fx:id="loginColumn" />
+                <TableColumn prefWidth="150.0" text="Password" fx:id="passwordColumn" />
+                <TableColumn prefWidth="220.0" text="Email" fx:id="emailColumn" />
+            </columns>
+        </TableView>
+        <Label layoutX="14.0" layoutY="18.0" text="List all users:">
+            <font>
+                <Font name="Verdana" size="24.0" />
+            </font>
+        </Label>
     </children>
 </AnchorPane>

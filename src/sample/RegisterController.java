@@ -22,25 +22,32 @@ public class RegisterController {
     void initialize() {
 
         RegisterButton.setOnAction(event -> {
+            if(RegisterPass.getText()!="") {
 
-            ConnectToBase ob = new ConnectToBase();
-            ob.Register(RegisterPass.getText());
+                if(RegisterPass.getText().trim() =="")
+                System.out.print("aaa");
 
-            RegisterPass.getScene().getWindow().hide();
+                System.out.print(RegisterPass.getText());
 
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("sample.fxml"));
+                ConnectToBase ob = new ConnectToBase();
+                ob.Register(RegisterPass.getText());
 
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
+                RegisterPass.getScene().getWindow().hide();
+
+               /* FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("sample.fxml"));
+
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.showAndWait();*/
             }
-
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
         });
 
 
