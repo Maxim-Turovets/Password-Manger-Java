@@ -26,12 +26,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sample.DataBase.db" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DebuggerManager">
@@ -131,7 +126,7 @@
           <entry key="fxml" value="4" />
           <entry key="java" value="25" />
           <entry key="password" value="3" />
-          <entry key="sql" value="15" />
+          <entry key="sql" value="18" />
           <entry key="sqlite_master" value="2" />
           <entry key="sqlite_sequence" value="2" />
           <entry key="user" value="3" />
@@ -141,7 +136,7 @@
         <counts>
           <entry key="Database Element" value="10" />
           <entry key="JAVA" value="25" />
-          <entry key="Scratch" value="15" />
+          <entry key="Scratch" value="18" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -149,15 +144,15 @@
         <counts>
           <entry key="cell" value="23" />
           <entry key="fxml" value="50" />
-          <entry key="java" value="2940" />
-          <entry key="sql" value="383" />
+          <entry key="java" value="2953" />
+          <entry key="sql" value="422" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2939" />
+          <entry key="JAVA" value="2952" />
           <entry key="SQL" value="1" />
-          <entry key="Scratch" value="406" />
+          <entry key="Scratch" value="445" />
           <entry key="XML" value="50" />
         </counts>
       </usages-collector>
@@ -185,7 +180,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
+            <state relative-caret-position="97">
               <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -209,31 +204,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="77" column="85" selection-start-line="77" selection-start-column="85" selection-end-line="77" selection-end-column="85" />
+            <state relative-caret-position="357">
+              <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#open#0;class#ConnectToBase#0" />
                 <element signature="method#AddPass#0;class#ConnectToBase#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/15952a28-ef05-4a99-bcab-04279c620a61/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb5cc049-213d-4449-b663-5fc081fc1041/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -312,10 +289,13 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0a7f4ca9-bb65-4338-b0dd-09df33d3017a/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0373fad6-75ae-4152-a80a-79928c61d1e8/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1a4f24c1-67ea-486d-82ad-0ab6541c11f7/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/15952a28-ef05-4a99-bcab-04279c620a61/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/39463d2b-99b6-4427-b2c1-382526f4a763/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb5cc049-213d-4449-b663-5fc081fc1041/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fe5a40ac-b02c-4a0d-bfcc-42c9895b82cc/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/15952a28-ef05-4a99-bcab-04279c620a61/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f10144d5-5c35-49b2-9c55-7c4029910211/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f7d1ecd1-4182-42dc-82bb-10b525b440c0/console.sql" />
       </list>
     </option>
   </component>
@@ -508,17 +488,52 @@
       <workItem from="1537004228776" duration="16837000" />
       <workItem from="1537033088113" duration="8404000" />
       <workItem from="1537042787763" duration="313000" />
-      <workItem from="1537088516834" duration="5524000" />
+      <workItem from="1537088516834" duration="6114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44659000" />
+    <option name="totallyTimeSpent" value="45249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23157895" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28825623" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.3291815" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3291815" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3291815" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24939272" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.17894737" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.05910931" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23157895" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
@@ -548,42 +563,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
       <window_info anchor="right" id="Database" order="4" visible="true" weight="0.12064777" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.05910931" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.23157895" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28825623" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Problems" order="9" />
-      <window_info anchor="bottom" id="Changes" order="10" />
-      <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" weight="0.3291815" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3291815" />
-      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Database Changes" order="15" weight="0.3291815" />
-      <window_info anchor="bottom" id="Terminal" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24939272" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.12064777" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.05910931" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -799,16 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="709">
@@ -836,14 +805,45 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0de55229-0192-49e5-9fe9-e47a132713cc/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/15952a28-ef05-4a99-bcab-04279c620a61/console.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb5cc049-213d-4449-b663-5fc081fc1041/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb5cc049-213d-4449-b663-5fc081fc1041/console.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe5a40ac-b02c-4a0d-bfcc-42c9895b82cc/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f10144d5-5c35-49b2-9c55-7c4029910211/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7d1ecd1-4182-42dc-82bb-10b525b440c0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/15952a28-ef05-4a99-bcab-04279c620a61/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="29" />
@@ -852,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="77" column="85" selection-start-line="77" selection-start-column="85" selection-end-line="77" selection-end-column="85" />
+        <state relative-caret-position="357">
+          <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#open#0;class#ConnectToBase#0" />
