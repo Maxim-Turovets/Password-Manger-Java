@@ -126,7 +126,7 @@
           <entry key="fxml" value="4" />
           <entry key="java" value="25" />
           <entry key="password" value="3" />
-          <entry key="sql" value="18" />
+          <entry key="sql" value="19" />
           <entry key="sqlite_master" value="2" />
           <entry key="sqlite_sequence" value="2" />
           <entry key="user" value="3" />
@@ -136,7 +136,7 @@
         <counts>
           <entry key="Database Element" value="10" />
           <entry key="JAVA" value="25" />
-          <entry key="Scratch" value="18" />
+          <entry key="Scratch" value="19" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -145,14 +145,14 @@
           <entry key="cell" value="23" />
           <entry key="fxml" value="50" />
           <entry key="java" value="2953" />
-          <entry key="sql" value="422" />
+          <entry key="sql" value="429" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2952" />
           <entry key="SQL" value="1" />
-          <entry key="Scratch" value="445" />
+          <entry key="Scratch" value="452" />
           <entry key="XML" value="50" />
         </counts>
       </usages-collector>
@@ -204,8 +204,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+            <state relative-caret-position="117">
+              <caret line="75" column="49" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#open#0;class#ConnectToBase#0" />
@@ -296,6 +296,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/15952a28-ef05-4a99-bcab-04279c620a61/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f10144d5-5c35-49b2-9c55-7c4029910211/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f7d1ecd1-4182-42dc-82bb-10b525b440c0/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3df945ea-e40a-4a2c-97d1-1cdfa8f8c969/console.sql" />
       </list>
     </option>
   </component>
@@ -375,7 +376,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537042531142" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -488,12 +489,12 @@
       <workItem from="1537004228776" duration="16837000" />
       <workItem from="1537033088113" duration="8404000" />
       <workItem from="1537042787763" duration="313000" />
-      <workItem from="1537088516834" duration="6114000" />
+      <workItem from="1537088516834" duration="6367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45249000" />
+    <option name="totallyTimeSpent" value="45502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -507,7 +508,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28825623" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28825623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -526,7 +527,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24939272" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.17894737" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.17894737" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.05910931" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -850,10 +851,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3df945ea-e40a-4a2c-97d1-1cdfa8f8c969/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+        <state relative-caret-position="117">
+          <caret line="75" column="49" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#open#0;class#ConnectToBase#0" />

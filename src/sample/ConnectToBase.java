@@ -42,7 +42,7 @@ public class ConnectToBase {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn =  DriverManager.getConnection("jdbc:sqlite:DataBase.db");
+            Connection conn =  DriverManager.getConnection("jdbc:sqlite:../Password-Manger-Java/src/sample/DataBase.db");
 
 
             Statement state = conn.createStatement();
