@@ -50,22 +50,7 @@ public class UsController {
         usersData.add(new User(2, "Bob", "dsfsdfw", "bob@mail.com"));
         usersData.add(new User(3, "Jeck", "dsfdsfwe", "Jeck@mail.com"));
         usersData.add(new User(4, "Mike", "iueern", "mike@mail.com"));
-        usersData.add(new User(5, "colin", "woeirn", "colin@mail.com"));
-        usersData.add(new User(1, "Alex", "qwerty", "alex@mail.com"));
-        usersData.add(new User(2, "Bob", "dsfsdfw", "bob@mail.com"));
-        usersData.add(new User(3, "Jeck", "dsfdsfwe", "Jeck@mail.com"));
-        usersData.add(new User(4, "Mike", "iueern", "mike@mail.com"));
-        usersData.add(new User(5, "colin", "woeirn", "colin@mail.com"));
-        usersData.add(new User(1, "Alex", "qwerty", "alex@mail.com"));
-        usersData.add(new User(2, "Bob", "dsfsdfw", "bob@mail.com"));
-        usersData.add(new User(3, "Jeck", "dsfdsfwe", "Jeck@mail.com"));
-        usersData.add(new User(4, "Mike", "iueern", "mike@mail.com"));
-        usersData.add(new User(5, "colin", "woeirn", "colin@mail.com"));
-        usersData.add(new User(1, "Alex", "qwerty", "alex@mail.com"));
-        usersData.add(new User(2, "Bob", "dsfsdfw", "bob@mail.com"));
-        usersData.add(new User(3, "Jeck", "dsfdsfwe", "Jeck@mail.com"));
-        usersData.add(new User(4, "Mike", "iueern", "mike@mail.com"));
-        usersData.add(new User(5, "colin", "woeirn", "colin@mail.com"));
+
     }
 
 }
