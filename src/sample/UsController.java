@@ -49,7 +49,7 @@ public class UsController {
           //  AddAccount.getScene().getWindow().hide();
 
             ConnectToBase ob= new ConnectToBase();
-            ob.CreateTable();
+          //  ob.CreateTable();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("addaccount.fxml"));
 

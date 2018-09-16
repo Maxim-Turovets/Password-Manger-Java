@@ -69,7 +69,7 @@ public class ConnectToBase {
         }
     }
 
-    public void Register (String  RegisterPass)
+    public int Register (String  RegisterPass)
     {
         if(RegisterPass.isEmpty()==false) {
             try {
@@ -90,17 +90,18 @@ public class ConnectToBase {
             } catch (Exception e) {
                 System.out.print("ERROR");
             }
+            System.out.print("===="+AddPass(RegisterPass)+"=======\n");
+
         }
+        return  AddPass(RegisterPass);
     }
 
-    public void CreateTable ()
+    public void CreateTable ( int index )
     {
-
-
 
         try {
                 Class.forName("org.sqlite.JDBC");
-                Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser1.db");
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+index+".db");
                  Statement state = conn.createStatement();
                String stringSQL = "CREATE TABLE UserTable ( id INTEGER PRIMARY KEY AUTOINCREMENT ,login Varchar (30),   password Varchar (30),   email Varchar (30))";
 

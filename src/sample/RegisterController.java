@@ -25,18 +25,14 @@ public class RegisterController {
             if(RegisterPass.getText()!="") {
 
                 if(RegisterPass.getText().trim() =="")
-                System.out.print("aaa");
-
                 System.out.print(RegisterPass.getText());
-
                 ConnectToBase ob = new ConnectToBase();
-                ob.Register(RegisterPass.getText());
-                ob.CreateTable();
+                ob.CreateTable(ob.Register(RegisterPass.getText()));
 
-                RegisterPass.getScene().getWindow().hide();
+                //RegisterPass.getScene().getWindow().hide();
 
-               /* FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("sample.fxml"));
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("main.fxml"));
 
                 try {
                     loader.load();
@@ -47,7 +43,7 @@ public class RegisterController {
                 Parent root = loader.getRoot();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
-                stage.showAndWait();*/
+                stage.showAndWait();
 
 
             }
