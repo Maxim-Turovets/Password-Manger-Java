@@ -27,11 +27,11 @@ public class AddAccountController {
     private void initialize() {
         AddAccount.setOnAction(event -> {
 
-            AddInformationToTableAccount( Controller.index ,AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
+            AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
         });
     }
 
-    public void AddInformationToTableAccount (int index,String log , String pass ,String ema )
+    public void AddInformationToTableAccount (String log , String pass ,String ema )
     {
         try {
             Class.forName("org.sqlite.JDBC");
@@ -40,6 +40,7 @@ public class AddAccountController {
             Statement state = conn.createStatement();
             String stringSQL = "INSERT INTO  UserTable ( login,password,email) VALUES  ("+"'" +log+"','"+pass+"','"+ema+"')";
             ResultSet res = state.executeQuery(stringSQL);
+
 
         } catch (Exception e) {
             System.out.print("qqqqq");

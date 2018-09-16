@@ -46,7 +46,7 @@ public class UsController {
     @FXML
     private void initialize() {
 
-        initData();
+
         AddAccount.setOnAction(event -> {
 
 
@@ -66,6 +66,7 @@ public class UsController {
             stage.showAndWait();
         });
 
+        initData();
 
         // устанавливаем тип и значение которое должно хранится в колонке
         idColumn.setCellValueFactory(new PropertyValueFactory<User, Integer>("id"));
@@ -78,20 +79,116 @@ public class UsController {
 
 
     }
-    
+
+
     private void initData() {
-        int f=0;
-        ConnectToBase ob = new ConnectToBase();
-        ConnectToBase obj = new ConnectToBase();
-        obj.GetValue();
 
+         for (int i=1;i<28;i++)
+             usersData.add(new User(i, getLogin(i), getPass(i), getEmail(i)));
 
-         for (int i=0;i<ConnectToBase.value;i++)
-             usersData.add(new User(i+1, ob.getLogin(i+1), ob.getPass(i+1), ob.getEmail(i+1)));
-
+     //   System.out.print(GetValue());
+     // GetValue();
     }
 
 
+    public String getLogin (int index )
+    {
+        String LOgin="";
+        try {
+            Class.forName("org.sqlite.JDBC");
 
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+
+
+            Statement state = conn.createStatement();
+
+            String stringSQL = "Select  Login  From UserTable  WHERE id="+index;
+            // System.out.print(stringSQL);
+            ResultSet res = state.executeQuery(stringSQL);
+            LOgin= res.getString(1);
+
+
+
+
+        } catch (Exception e) {
+            System.out.print("er Add inf");
+        }
+        return  LOgin;
+    }
+
+    public String getPass (int index )
+    {
+        String PAss="";
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+
+
+            Statement state = conn.createStatement();
+
+            String stringSQL = "Select  password  From UserTable  WHERE id="+index;
+            // System.out.print(stringSQL);
+            ResultSet res = state.executeQuery(stringSQL);
+            PAss= res.getString(1);
+
+
+
+
+        } catch (Exception e) {
+            System.out.print("er Add inf");
+        }
+        return  PAss;
+    }
+
+    public String getEmail (int index )
+    {
+        String EMail="";
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+
+
+            Statement state = conn.createStatement();
+
+            String stringSQL = "Select  email  From UserTable  WHERE id="+index;
+            // System.out.print(stringSQL);
+            ResultSet res = state.executeQuery(stringSQL);
+            EMail= res.getString(1);
+
+
+
+
+        } catch (Exception e) {
+            System.out.print("er Add inf");
+        }
+        return  EMail;
+    }
+
+
+    public  int  GetValue ()
+    {
+    int count = 0;
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            ResultSet res;
+
+            Statement state = conn.createStatement();
+
+            String stringSQL = "SELECT COUNT() FROM UserTable";
+            ConnectToBase.value =state.executeQuery(stringSQL).getInt(1);
+
+            System.out.print(ConnectToBase.value);
+
+
+
+        } catch (Exception e) {
+            System.out.print("er");
+        }
+     return count;
+    }
 
 }
