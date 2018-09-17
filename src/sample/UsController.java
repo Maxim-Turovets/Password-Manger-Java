@@ -9,6 +9,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 
 import javafx.scene.control.TableColumn;
+import javafx.stage.Stage;
 
 import java.sql.*;
 
@@ -48,18 +49,18 @@ public class UsController {
       DeleteAccount.setOnAction(event -> {
       int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
       tableUsers.getItems().remove(selectedIndex);
-
-
       int a=DeleteRow(selectedIndex+1);
       Sort(a);
   });
 
 
-       // tableUsers.getItems().remove(selectedIndex);
+
         AddAccount.setOnAction(event -> {
         Controller  controllerobject = new Controller();
-
+       // AddAccount.getScene().getWindow().hide();
         controllerobject.NextWindow("addaccount.fxml");
+         //   Stage stage = (Stage) AddAccount.getScene().getWindow();
+           // stage.close();
         });
 
         initData();
@@ -84,7 +85,7 @@ public class UsController {
         for (int i=1;i<GetValue()+1;i++)
             usersData.add(new User(i, getLogin(i), getPass(i), getEmail(i)));
 
-        System.out.print("\nValue = "+GetValue());
+
 
     }
 

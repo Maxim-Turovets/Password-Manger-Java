@@ -34,12 +34,13 @@ public class Controller {
 
                if(PassText.getText().isEmpty()==false)
                {
-                   ButtonLogin.getScene().getWindow().hide();// если строка не пустая
+                   // если строка не пустая
                    ConnectToBase ob = new ConnectToBase();
                    index=ob.AddPass(PassText.getText());
 
 
-                   if(ob.confirmation==true) {            // если пароль правильный
+                   if(ob.confirmation==true) {
+                       ButtonLogin.getScene().getWindow().hide();// если пароль правильный
                       NextWindow("main.fxml");
                    }
                }

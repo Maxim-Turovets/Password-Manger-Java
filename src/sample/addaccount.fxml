@@ -4,11 +4,12 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane cacheShape="false" centerShape="false" focusTraversable="true" prefHeight="400.0" prefWidth="600.0" scaleShape="false" style="-fx-background-color: #F5F6CE;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddAccountController">
+<AnchorPane focusTraversable="true" maxHeight="400.0" maxWidth="624.0" minHeight="400.0" minWidth="624.0" prefHeight="400.0" prefWidth="624.0" style="-fx-background-color: #F5F6CE;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddAccountController">
    <children>
-      <TextField fx:id="AccountLogin"  layoutX="224.0" layoutY="116.0" promptText="Login"  />
+      <TextField fx:id="AccountLogin" layoutX="224.0" layoutY="116.0" promptText="Login" />
       <TextField fx:id="AccountPass" layoutX="226.0" layoutY="175.0" promptText="Password" />
       <TextField fx:id="AccountEmail" layoutX="228.0" layoutY="239.0" promptText="Email" />
       <Button fx:id="AddAccount" defaultButton="true" layoutX="278.0" layoutY="331.0" mnemonicParsing="false" text="Add" textAlignment="JUSTIFY" textOverrun="CLIP" />
+      <Button fx:id="BackButton" layoutX="8.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
    </children>
 </AnchorPane>

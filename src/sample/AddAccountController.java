@@ -3,6 +3,7 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -24,10 +25,22 @@ public class AddAccountController {
     private Button AddAccount;
 
     @FXML
+    private Button BackButton;
+
+    @FXML
     private void initialize() {
         AddAccount.setOnAction(event -> {
 
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
+
+        });
+
+        BackButton.setOnAction(event -> {
+            Stage stage = (Stage) BackButton.getScene().getWindow();
+
+            Controller controllerobject = new Controller();
+            controllerobject.NextWindow("main.fxml");
+            stage.close();
 
         });
     }

@@ -131,7 +131,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="24" />
-          <entry key="fxml" value="7" />
+          <entry key="fxml" value="10" />
           <entry key="java" value="76" />
           <entry key="password" value="3" />
           <entry key="sql" value="84" />
@@ -146,23 +146,23 @@
           <entry key="Database Element" value="10" />
           <entry key="JAVA" value="76" />
           <entry key="Scratch" value="84" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="23" />
-          <entry key="fxml" value="66" />
-          <entry key="java" value="6450" />
+          <entry key="fxml" value="80" />
+          <entry key="java" value="6628" />
           <entry key="sql" value="1123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6449" />
+          <entry key="JAVA" value="6627" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1146" />
-          <entry key="XML" value="66" />
+          <entry key="XML" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -176,13 +176,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/AddAccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="223">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#524#657#0" />
                 <element signature="method#AddInformationToTableAccount#0;class#AddAccountController#0" />
               </folding>
             </state>
@@ -201,8 +202,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-321">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="336">
+              <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getLogin#0;class#UsController#0" />
@@ -210,23 +211,54 @@
                 <element signature="method#getEmail#0;class#UsController#0" />
                 <element signature="method#GetValue#0;class#UsController#0" />
                 <element signature="method#DeleteRow#0;class#UsController#0" />
+                <element signature="method#Sort#0;class#UsController#0" />
                 <element signature="method#GetId#0;class#UsController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/main.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="183">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#NextWindow#0;class#Controller#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/addaccount.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="178" selection-start-line="6" selection-start-column="178" selection-end-line="6" selection-end-column="178" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -259,8 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cb1cf346-30bd-46a8-8125-11fd3037e482/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1639f08f-57db-434b-a91e-b8d897323337/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/35e379b7-01a6-4945-b9ad-47bb386d510d/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/049135c4-d612-4f2a-8d0f-e035b70f005e/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1fde35af-bb5d-4f2f-8e8c-ab0177f07e6c/console.sql" />
@@ -291,7 +321,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/33407962-9e89-4e25-8ca1-f7dd0be5c416/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/79709d7f-374c-48f0-b246-d5d3e8348f8c/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
-        <option value="$PROJECT_DIR$/src/sample/addaccount.fxml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/60daaf00-64a1-4cfc-8575-fb924ae96f65/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/RegisterController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql" />
@@ -307,9 +336,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e464728d-c0dc-4da2-8a98-d81c40d8a365/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5b01955b-1ed9-4050-85d7-c4a91553eda2/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4b7a6e60-d891-4082-b2ef-188281a74d9a/console.sql" />
-        <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
-        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
+        <option value="$PROJECT_DIR$/src/sample/main.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/addaccount.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
+        <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
       </list>
     </option>
   </component>
@@ -505,12 +537,12 @@
       <workItem from="1537042787763" duration="313000" />
       <workItem from="1537088516834" duration="48635000" />
       <workItem from="1537177686999" duration="15707000" />
-      <workItem from="1537206874703" duration="6335000" />
+      <workItem from="1537206874703" duration="9478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109812000" />
+    <option name="totallyTimeSpent" value="112955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -522,10 +554,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.23562753" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23562753" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -614,20 +646,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/StringConcatHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/422f9174-e1aa-4dab-8cdb-826fc8b33c69/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -844,14 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/addaccount.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -955,6 +965,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4b7a6e60-d891-4082-b2ef-188281a74d9a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -962,10 +980,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/addaccount.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="178" selection-start-line="6" selection-start-column="178" selection-end-line="6" selection-end-column="178" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#NextWindow#0;class#Controller#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="336">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getLogin#0;class#UsController#0" />
@@ -973,6 +1018,7 @@
             <element signature="method#getEmail#0;class#UsController#0" />
             <element signature="method#GetValue#0;class#UsController#0" />
             <element signature="method#DeleteRow#0;class#UsController#0" />
+            <element signature="method#Sort#0;class#UsController#0" />
             <element signature="method#GetId#0;class#UsController#0" />
           </folding>
         </state>
@@ -980,22 +1026,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AddAccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="223">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#524#657#0" />
             <element signature="method#AddInformationToTableAccount#0;class#AddAccountController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#NextWindow#0;class#Controller#0" />
           </folding>
         </state>
       </provider>

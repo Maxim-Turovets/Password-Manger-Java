@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsController">
+<AnchorPane id="AnchorPane" maxHeight="400" maxWidth="624" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsController">
     <children>
         <!-- Таблица в которую мы будем выводит наш pojo -->
         <TableView fx:id="tableUsers" layoutX="12.0" layoutY="62.0" prefHeight="324.0" prefWidth="600.0">
@@ -19,11 +17,6 @@
                 <TableColumn fx:id="emailColumn" prefWidth="220.0" text="Email" />
             </columns>
         </TableView>
-        <Label layoutX="14.0" layoutY="18.0" text="List all users:">
-            <font>
-                <Font name="Verdana" size="24.0" />
-            </font>
-        </Label>
       <Button fx:id="AddAccount" layoutX="572.0" layoutY="17.0" mnemonicParsing="false" text="Add" />
       <Button fx:id="DeleteAccount" layoutX="511.0" layoutY="17.0" mnemonicParsing="false" text="Delete" />
     </children>
