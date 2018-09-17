@@ -39,8 +39,13 @@ public class AddAccountController {
             Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
             Statement state = conn.createStatement();
             Statement state22 = conn.createStatement();
+            UsController ob = new UsController();
+
             String stringSQL = "INSERT INTO  UserTable ( login,password,email) VALUES  ("+"'" +log+"','"+pass+"','"+ema+"')";
             state22.executeUpdate(stringSQL);
+            stringSQL="UPDATE UserTable SET id="+(ob.GetValue()+1)+" WHERE id="+(ob.GetValue())+";";
+            state.executeUpdate(stringSQL);
+
           //  conn.close();
         } catch (Exception e) {
             System.out.print("1");
