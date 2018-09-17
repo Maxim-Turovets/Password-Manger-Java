@@ -86,8 +86,6 @@ public class UsController {
         for (int i=1;i<GetValue()+1;i++)
             usersData.add(new User(i, getLogin(i), getPass(i), getEmail(i)));
 
-      // System.out.print(GetValue());
-    //  GetValue();
     }
 
 

@@ -129,7 +129,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="23" />
-          <entry key="fxml" value="6" />
+          <entry key="fxml" value="7" />
           <entry key="java" value="65" />
           <entry key="password" value="3" />
           <entry key="sql" value="70" />
@@ -144,7 +144,7 @@
           <entry key="Database Element" value="10" />
           <entry key="JAVA" value="65" />
           <entry key="Scratch" value="70" />
-          <entry key="XML" value="6" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -203,7 +203,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
+            <state relative-caret-position="760">
               <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -212,11 +212,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="9" selection-end-column="1" />
+            <state>
+              <caret selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -224,8 +224,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-438">
-              <caret line="160" column="25" selection-start-line="160" selection-start-column="25" selection-end-line="160" selection-end-column="25" />
+            <state relative-caret-position="276">
+              <caret line="54" column="70" lean-forward="true" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -233,10 +233,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/addaccount.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="420">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -285,7 +295,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/98af7378-449f-4561-8476-f4f80b1c0aa9/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e85c62df-2c76-4460-808b-b88f550ca8df/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6cf9fc3d-f901-47c9-99ab-b4131814fa74/console.sql" />
-        <option value="$PROJECT_DIR$/src/sample/addaccount.fxml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f045edb0-a9e5-4d69-a2d5-72865238dedc/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/92a27133-c488-4914-96d5-23099de0e1e8/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6f870186-48a9-4137-b73a-fe1d994d9807/console.sql" />
@@ -324,8 +333,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/79709d7f-374c-48f0-b246-d5d3e8348f8c/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
         <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
-        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql" />
+        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
+        <option value="$PROJECT_DIR$/src/sample/addaccount.fxml" />
       </list>
     </option>
   </component>
@@ -404,7 +414,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537174646352" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537175092363" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.20.1.jar!/" />
@@ -519,12 +529,12 @@
       <workItem from="1537004228776" duration="16837000" />
       <workItem from="1537033088113" duration="8404000" />
       <workItem from="1537042787763" duration="313000" />
-      <workItem from="1537088516834" duration="47466000" />
+      <workItem from="1537088516834" duration="47979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86601000" />
+    <option name="totallyTimeSpent" value="87114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,7 +549,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.23157895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23157895" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -548,7 +558,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28825623" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28825623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -591,16 +601,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.20.1/sqlite-jdbc-3.20.1.jar!/org/sqlite/core/CoreResultSet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#884#885#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/ActionEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -927,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33407962-9e89-4e25-8ca1-f7dd0be5c416/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -966,16 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-438">
-          <caret line="160" column="25" selection-start-line="160" selection-start-column="25" selection-end-line="160" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/79709d7f-374c-48f0-b246-d5d3e8348f8c/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -990,9 +970,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
+        <state relative-caret-position="760">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1000,12 +987,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="420">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="54" column="70" lean-forward="true" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/addaccount.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
