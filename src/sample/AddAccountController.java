@@ -40,11 +40,10 @@ public class AddAccountController {
             Statement state = conn.createStatement();
             Statement state22 = conn.createStatement();
             String stringSQL = "INSERT INTO  UserTable ( login,password,email) VALUES  ("+"'" +log+"','"+pass+"','"+ema+"')";
-            ResultSet res = state22.executeQuery(stringSQL);
-            res.next();
-
+            state22.executeUpdate(stringSQL);
+          //  conn.close();
         } catch (Exception e) {
-            System.out.print(e.getMessage());
+            System.out.print("1");
         }
     }
 }
