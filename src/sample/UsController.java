@@ -21,6 +21,7 @@ import java.sql.*;
 
 public class UsController {
 
+    public  static  boolean Removed = false;
     private ObservableList<User> usersData = FXCollections.observableArrayList();
 
     @FXML
@@ -52,7 +53,7 @@ public class UsController {
    //  tableUsers.getItems().remove(selectedIndex);
       int a=DeleteRow(selectedIndex+1);
       Sort(a);
-
+      Removed = true;
   });
 
 
@@ -224,6 +225,7 @@ public class UsController {
 
 
 
+
     public int DeleteRow(int iD) {
         try {
             Class.forName("org.sqlite.JDBC");
@@ -265,6 +267,35 @@ public class UsController {
 
 
 
+    public  int  GetId ()
+    {
+        int count = 0;
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            ResultSet res;
+
+            Statement state2 = conn.createStatement();
+
+
+            String stringSQL = "SELECT id FROM UserTable";
+            res = state2.executeQuery(stringSQL);
+
+
+            res.next();
+
+            count=res.getInt(1);
+            conn.close();
+
+
+
+
+        } catch (Exception e) {
+            System.out.print("er");
+        }
+        return count;
+    }
 
 
 

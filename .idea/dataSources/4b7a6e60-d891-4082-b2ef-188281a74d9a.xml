@@ -20,8 +20,7 @@
     </table>
     <column id="9" parent="6" name="id">
       <Position>1</Position>
-      <DataType>INTEGER|0s</DataType>
-      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>INTeger|0s</DataType>
     </column>
     <column id="10" parent="6" name="login">
       <Position>2</Position>

@@ -41,14 +41,19 @@ public class AddAccountController {
             Statement state22 = conn.createStatement();
             UsController ob = new UsController();
 
-            String stringSQL = "INSERT INTO  UserTable ( login,password,email) VALUES  ("+"'" +log+"','"+pass+"','"+ema+"')";
-            state22.executeUpdate(stringSQL);
-         
-            state.executeUpdate(stringSQL);
+            if(ob.GetValue()<1) {
+                String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+1+ ",'" + log + "','" + pass + "','" + ema + "')";
+                state22.executeUpdate(stringSQL);
+                UsController.Removed=true;
+            }
+            else {
+                String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+"'"+(ob.GetValue()+1)+ "','" + log + "','" + pass + "','" + ema + "')";
+                state22.executeUpdate(stringSQL);
+            }
+            conn.close();
 
-          //  conn.close();
         } catch (Exception e) {
-            System.out.print("1");
+            System.out.print(e.getMessage());
         }
     }
 }
