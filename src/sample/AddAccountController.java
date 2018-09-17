@@ -28,6 +28,7 @@ public class AddAccountController {
         AddAccount.setOnAction(event -> {
 
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
+
         });
     }
 
@@ -44,7 +45,6 @@ public class AddAccountController {
             if(ob.GetValue()<1) {
                 String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+1+ ",'" + log + "','" + pass + "','" + ema + "')";
                 state22.executeUpdate(stringSQL);
-                UsController.Removed=true;
             }
             else {
                 String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+"'"+(ob.GetValue()+1)+ "','" + log + "','" + pass + "','" + ema + "')";

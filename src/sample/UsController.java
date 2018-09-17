@@ -3,26 +3,21 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
 import javafx.scene.control.TableColumn;
-import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.sql.*;
 
 
 
 public class UsController {
 
-    public  static  boolean Removed = false;
     private ObservableList<User> usersData = FXCollections.observableArrayList();
+
 
     @FXML
     private TableView<User> tableUsers;
@@ -45,47 +40,37 @@ public class UsController {
     @FXML
     private Button DeleteAccount;
 
-    // инициализируем форму данными
+
     @FXML
     private void initialize() {
+
+
       DeleteAccount.setOnAction(event -> {
       int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
-   //  tableUsers.getItems().remove(selectedIndex);
+      tableUsers.getItems().remove(selectedIndex);
+
+
       int a=DeleteRow(selectedIndex+1);
       Sort(a);
-      Removed = true;
   });
 
 
        // tableUsers.getItems().remove(selectedIndex);
         AddAccount.setOnAction(event -> {
+        Controller  controllerobject = new Controller();
 
-
-            FXMLLoader loader = new FXMLLoader();
-
-            loader.setLocation(getClass().getResource("addaccount.fxml"));
-          //  AddAccount.getScene().getWindow().hide();
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
+        controllerobject.NextWindow("addaccount.fxml");
         });
 
         initData();
 
-        // устанавливаем тип и значение которое должно хранится в колонке
+
         idColumn.setCellValueFactory(new PropertyValueFactory<User, Integer>("id"));
         loginColumn.setCellValueFactory(new PropertyValueFactory<User, String>("login"));
         passwordColumn.setCellValueFactory(new PropertyValueFactory<User, String>("password"));
         emailColumn.setCellValueFactory(new PropertyValueFactory<User, String>("email"));
 
-        // заполняем таблицу данными
+
         tableUsers.setItems(usersData);
 
 
