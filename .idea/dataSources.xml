@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="DataBase.db" uuid="28475ab9-6b8f-41a0-8ed1-d43453c0b6e8">
+    <data-source source="LOCAL" name="DataBase.db" uuid="2105d52d-e3b7-4f15-80b1-0d054a5487d0">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\Макс\Documents\GitHub\Password-Manger-Java\DataBase.db</jdbc-url>
-      <driver-properties>
-        <property name="enable_load_extension" value="true" />
-      </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="DataBaseUser1.db" uuid="79709d7f-374c-48f0-b246-d5d3e8348f8c">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Макс\Documents\GitHub\Password-Manger-Java\DataBaseUser1.db</jdbc-url>
-      <driver-properties>
-        <property name="enable_load_extension" value="true" />
-      </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="DataBaseUser2.db" uuid="33407962-9e89-4e25-8ca1-f7dd0be5c416">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Макс\Documents\GitHub\Password-Manger-Java\DataBaseUser2.db</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>

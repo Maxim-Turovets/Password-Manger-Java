@@ -83,11 +83,11 @@ public class UsController {
 
     private void initData() {
 
-         for (int i=1;i<28;i++)
-             usersData.add(new User(i, getLogin(i), getPass(i), getEmail(i)));
+        for (int i=1;i<GetValue()+1;i++)
+            usersData.add(new User(i, getLogin(i), getPass(i), getEmail(i)));
 
-     //   System.out.print(GetValue());
-     // GetValue();
+      // System.out.print(GetValue());
+    //  GetValue();
     }
 
 
@@ -106,6 +106,7 @@ public class UsController {
             // System.out.print(stringSQL);
             ResultSet res = state.executeQuery(stringSQL);
             LOgin= res.getString(1);
+            conn.close();
 
 
 
@@ -131,6 +132,7 @@ public class UsController {
             // System.out.print(stringSQL);
             ResultSet res = state.executeQuery(stringSQL);
             PAss= res.getString(1);
+            conn.close();
 
 
 
@@ -156,6 +158,7 @@ public class UsController {
             // System.out.print(stringSQL);
             ResultSet res = state.executeQuery(stringSQL);
             EMail= res.getString(1);
+            conn.close();
 
 
 
@@ -177,11 +180,18 @@ public class UsController {
             ResultSet res;
 
             Statement state = conn.createStatement();
+            Statement state2 = conn.createStatement();
 
-            String stringSQL = "SELECT COUNT() FROM UserTable";
-            ConnectToBase.value =state.executeQuery(stringSQL).getInt(1);
 
-            System.out.print(ConnectToBase.value);
+                String stringSQL = "SELECT COUNT() FROM UserTable";
+                res = state2.executeQuery(stringSQL);
+
+
+            res.next();
+
+            count=res.getInt(1);
+            conn.close();
+
 
 
 

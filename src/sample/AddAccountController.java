@@ -38,12 +38,13 @@ public class AddAccountController {
 
             Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
             Statement state = conn.createStatement();
+            Statement state22 = conn.createStatement();
             String stringSQL = "INSERT INTO  UserTable ( login,password,email) VALUES  ("+"'" +log+"','"+pass+"','"+ema+"')";
-            ResultSet res = state.executeQuery(stringSQL);
-
+            ResultSet res = state22.executeQuery(stringSQL);
+            res.next();
 
         } catch (Exception e) {
-            System.out.print("qqqqq");
+            System.out.print(e.getMessage());
         }
     }
 }

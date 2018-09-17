@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+
+
 public class ConnectToBase {
 
 
@@ -85,13 +87,13 @@ public class ConnectToBase {
                 Statement state = conn.createStatement();
 
                 String stringSQL = "INSERT INTO PasswordTable (Password) VALUES ('" + RegisterPass + "')";
+                state.executeQuery(stringSQL);
 
 
-                ResultSet res = state.executeQuery(stringSQL);
 
 
             } catch (Exception e) {
-                System.out.print("ERROR");
+              //  System.out.print(e.getMessage());
             }
            // System.out.print("===="+AddPass(RegisterPass)+"=======\n");
 
@@ -107,10 +109,11 @@ public class ConnectToBase {
                 Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+index+".db");
                  Statement state = conn.createStatement();
                String stringSQL = "CREATE TABLE UserTable ( id INTEGER PRIMARY KEY AUTOINCREMENT ,login Varchar (30),   password Varchar (30),   email Varchar (30))";
-                ResultSet res = state.executeQuery(stringSQL);
+                //ResultSet res = state.executeQuery(stringSQL);
+                   state.executeUpdate(stringSQL);
 
             } catch (Exception e) {
-                System.out.print("er Create Table");
+                System.out.print(e.getMessage());
             }
 
     }
