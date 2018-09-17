@@ -43,7 +43,7 @@ public class AddAccountController {
 
             String stringSQL = "INSERT INTO  UserTable ( login,password,email) VALUES  ("+"'" +log+"','"+pass+"','"+ema+"')";
             state22.executeUpdate(stringSQL);
-            stringSQL="UPDATE UserTable SET id="+(ob.GetValue()+1)+" WHERE id="+(ob.GetValue())+";";
+         
             state.executeUpdate(stringSQL);
 
           //  conn.close();
