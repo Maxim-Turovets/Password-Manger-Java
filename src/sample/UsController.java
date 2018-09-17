@@ -15,10 +15,9 @@ import javafx.scene.control.TableColumn;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+
+
 
 public class UsController {
 
@@ -47,13 +46,19 @@ public class UsController {
     private void initialize() {
 
 
+
+       // tableUsers.getItems().remove(selectedIndex);
         AddAccount.setOnAction(event -> {
 
-
+           // int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
+           // tableUsers.getItems().remove(selectedIndex);
+         //   System.out.print(selectedIndex);
+           // DeleteRow(selectedIndex+1);
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("addaccount.fxml"));
 
+            loader.setLocation(getClass().getResource("addaccount.fxml"));
+          //  AddAccount.getScene().getWindow().hide();
             try {
                 loader.load();
             } catch (IOException e) {
@@ -76,6 +81,8 @@ public class UsController {
 
         // заполняем таблицу данными
         tableUsers.setItems(usersData);
+
+
 
 
     }
@@ -199,4 +206,43 @@ public class UsController {
      return count;
     }
 
+    public String getId (int index )
+    {
+        String ID="";
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+
+
+            Statement state = conn.createStatement();
+
+            String stringSQL = "Select  id  From UserTable  WHERE id="+index;
+            // System.out.print(stringSQL);
+            ResultSet res = state.executeQuery(stringSQL);
+            ID= res.getString(1);
+            conn.close();
+
+
+
+
+        } catch (Exception e) {
+            System.out.print("er Add inf");
+        }
+        return  ID;
+    }
+
+
+    public void DeleteRow(int iD) {
+        try {
+            Class.forName("org.sqlite.JDBC");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+            PreparedStatement delete = conn.prepareStatement("DELETE  FROM UserTable WHERE id = " + iD + ";");
+            delete.executeUpdate();
+            conn.close();
+        }
+        catch  (Exception e) {
+            System.out.print(e.getMessage());
+        }
+    }
 }

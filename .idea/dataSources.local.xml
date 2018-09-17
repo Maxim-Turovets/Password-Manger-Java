@@ -8,5 +8,12 @@
       <auth-required>false</auth-required>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
+    <data-source name="DataBaseUser1.db" uuid="60daaf00-64a1-4cfc-8575-fb924ae96f65">
+      <database-info product="SQLite" version="3.20.1" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.20.1.1" family="SQLITE" exact-version="3.20.1" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
   </component>
 </project>

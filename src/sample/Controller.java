@@ -43,7 +43,8 @@ public class Controller {
     void initialize() {
 
            ButtonLogin.setOnAction(event -> {
-               if(PassText.getText().isEmpty()==false) {    // если строка не пустая
+               if(PassText.getText().isEmpty()==false) {
+                   ButtonLogin.getScene().getWindow().hide();// если строка не пустая
                    ConnectToBase ob = new ConnectToBase();
                    index=ob.AddPass(PassText.getText());
                   // System.out.print(ConnectToBase.GetValue());

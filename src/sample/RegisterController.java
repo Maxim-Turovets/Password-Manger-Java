@@ -23,7 +23,7 @@ public class RegisterController {
 
         RegisterButton.setOnAction(event -> {
             if(RegisterPass.getText()!="") {
-
+                RegisterPass.getScene().getWindow().hide();
                 if(RegisterPass.getText().trim() =="")
                 System.out.print(RegisterPass.getText());
                 ConnectToBase ob = new ConnectToBase();
