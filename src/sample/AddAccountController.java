@@ -1,10 +1,14 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -24,6 +28,9 @@ public class AddAccountController {
     @FXML
     private Button AddAccount;
 
+    @FXML
+    private Button BackButton;
+
 
 
     @FXML
@@ -31,7 +38,17 @@ public class AddAccountController {
         AddAccount.setOnAction(event -> {
 
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
+        });
 
+        BackButton.setOnAction(event -> {
+            BackButton.getScene().getWindow().hide();
+
+
+            Stage stage = new Stage();
+
+            try{
+                FXMLDocumentController(stage);}
+            catch (Exception e){}
         });
 
 }
@@ -59,5 +76,13 @@ public class AddAccountController {
         } catch (Exception e) {
             System.out.print(e.getMessage());
         }
+    }
+
+    protected void FXMLDocumentController(Stage stage) throws IOException {
+        //Загрузили ресурс файла
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

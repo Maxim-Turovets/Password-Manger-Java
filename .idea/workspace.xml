@@ -39,10 +39,6 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="DataBase.db [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="DataBaseUser10.db" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
@@ -195,26 +191,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="153" />
-          <entry key="sql" value="35" />
+          <entry key="java" value="175" />
+          <entry key="sql" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="153" />
-          <entry key="Scratch" value="35" />
+          <entry key="JAVA" value="175" />
+          <entry key="Scratch" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="3" />
-          <entry key="sql" value="3" />
+          <entry key="sql" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="3" />
-          <entry key="Scratch" value="3" />
+          <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -227,10 +223,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/AddAccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="358">
+              <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#553#687#0" />
                 <element signature="method#AddInformationToTableAccount#0;class#AddAccountController#0" />
               </folding>
             </state>
@@ -255,11 +252,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="310" column="72" selection-start-line="310" selection-start-column="72" selection-end-line="310" selection-end-column="72" />
+            <state relative-caret-position="48">
+              <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="84" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getLogin#0;class#UsController#0" />
@@ -269,34 +266,17 @@
                 <element signature="method#DeleteRow#0;class#UsController#0" />
                 <element signature="method#Sort#0;class#UsController#0" />
                 <element signature="method#GetId#0;class#UsController#0" />
+                <element signature="method#FXMLDocumentController#0;class#UsController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="28" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/817dc565-a033-4c69-b090-99e310ef0094/console.sql">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/616247a4-ae63-40ae-988f-4f993d2c381c/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -314,8 +294,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="54" column="28" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="54" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -369,7 +349,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1fde35af-bb5d-4f2f-8e8c-ab0177f07e6c/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e0454f15-c79f-43e1-a9f8-f0ca5643bbec/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/66b11bb8-99ec-4fc7-9e5e-8eb719c2d2c9/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e1ff406d-1008-4705-8526-6bbb68cc59f0/console.sql" />
@@ -414,12 +393,13 @@
         <option value="$PROJECT_DIR$/src/sample/main.fxml" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/addaccount.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/817dc565-a033-4c69-b090-99e310ef0094/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/616247a4-ae63-40ae-988f-4f993d2c381c/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/UsController.java" />
+        <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql" />
       </list>
     </option>
   </component>
@@ -618,12 +598,12 @@
       <workItem from="1537206874703" duration="9569000" />
       <workItem from="1537217298916" duration="1503000" />
       <workItem from="1537259803001" duration="690000" />
-      <workItem from="1537263333205" duration="1499000" />
+      <workItem from="1537263333205" duration="2092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116738000" />
+    <option name="totallyTimeSpent" value="117331000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,7 +627,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2851064" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -664,10 +644,10 @@
       <window_info anchor="bottom" id="Terminal" order="16" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.24939272" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24899329" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.1785235" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1785235" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.05910931" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
@@ -727,9 +707,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c0423d9f-d6c6-406f-a3f7-a53cbf69b6ea/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e564a135-f886-4a32-9307-28f567b9c3a1/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1026,27 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/817dc565-a033-4c69-b090-99e310ef0094/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/616247a4-ae63-40ae-988f-4f993d2c381c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1063,8 +1019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="54" column="28" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="54" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1073,19 +1029,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AddAccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="358">
+          <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#553#687#0" />
             <element signature="method#AddInformationToTableAccount#0;class#AddAccountController#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/817dc565-a033-4c69-b090-99e310ef0094/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2105d52d-e3b7-4f15-80b1-0d054a5487d0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/616247a4-ae63-40ae-988f-4f993d2c381c/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="310" column="72" selection-start-line="310" selection-start-column="72" selection-end-line="310" selection-end-column="72" />
+        <state relative-caret-position="48">
+          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="84" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getLogin#0;class#UsController#0" />
@@ -1095,7 +1073,15 @@
             <element signature="method#DeleteRow#0;class#UsController#0" />
             <element signature="method#Sort#0;class#UsController#0" />
             <element signature="method#GetId#0;class#UsController#0" />
+            <element signature="method#FXMLDocumentController#0;class#UsController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="28" />
         </state>
       </provider>
     </entry>

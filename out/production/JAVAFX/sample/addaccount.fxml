@@ -10,5 +10,6 @@
       <TextField fx:id="AccountPass" layoutX="226.0" layoutY="175.0" promptText="Password" />
       <TextField fx:id="AccountEmail" layoutX="228.0" layoutY="239.0" promptText="Email" />
       <Button fx:id="AddAccount" defaultButton="true" layoutX="278.0" layoutY="331.0" mnemonicParsing="false" text="Add" textAlignment="JUSTIFY" textOverrun="CLIP" />
+      <Button fx:id="BackButton" defaultButton="true" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" textAlignment="JUSTIFY" textOverrun="CLIP" />
    </children>
 </AnchorPane>

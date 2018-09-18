@@ -74,17 +74,17 @@ public class UsController {
         AddAccount.setOnAction(event -> {
        // Controller  controllerobject = new Controller();
         AddAccount.getScene().getWindow().hide();
-      //  controllerobject.NextWindow("addaccount.fxml");
-         //   Stage stage = (Stage) AddAccount.getScene().getWindow();
-           // stage.close();
+        //  controllerobject.NextWindow("addaccount.fxml");
+        //   Stage stage = (Stage) AddAccount.getScene().getWindow();
+        // stage.close();
 
-            Stage stage = new Stage();
+        Stage stage = new Stage();
 
-            try{
-                FXMLDocumentController(stage);}
-            catch (Exception e){}
+        try{
+            FXMLDocumentController(stage);}
+        catch (Exception e){}
 
-        });
+    });
 
         initData();
 
