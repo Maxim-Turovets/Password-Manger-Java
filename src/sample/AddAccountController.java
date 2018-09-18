@@ -33,7 +33,7 @@ public class AddAccountController {
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
 
         });
-        
+
 }
 
     public void AddInformationToTableAccount (String log , String pass ,String ema )

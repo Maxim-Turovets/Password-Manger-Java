@@ -30,7 +30,7 @@ public class Controller {
     @FXML
     void initialize() {
 
-           ButtonLogin.setOnAction(event -> {
+       /*    ButtonLogin.setOnAction(event -> {
 
                if(PassText.getText().isEmpty()==false)
                {
@@ -42,10 +42,19 @@ public class Controller {
                    if(ob.confirmation==true) {
                        ButtonLogin.getScene().getWindow().hide();// если пароль правильный
                       NextWindow("main.fxml");
+
                    }
                }
-           });
+           });*/
 
+   ButtonLogin.setOnAction(event -> {
+       ButtonLogin.getScene().getWindow().hide();// если пароль правильный
+       Stage stage = new Stage();
+
+       try{
+       FXMLDocumentController(stage);}
+       catch (Exception e){}
+   });
 
         ButtonRegister.setOnAction(event -> {
 
@@ -70,6 +79,14 @@ public class Controller {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.showAndWait();
+
+    }
+    protected void FXMLDocumentController(Stage stage) throws IOException {
+        //Загрузили ресурс файла
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

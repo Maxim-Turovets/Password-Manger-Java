@@ -3,6 +3,9 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -11,6 +14,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.TableColumn;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.*;
 
 
@@ -50,7 +54,7 @@ public class UsController {
 
         UpdateAccountButton.setOnAction(event -> {
             Controller  controllerobject = new Controller();
-             AddAccount.getScene().getWindow().hide();
+          //   AddAccount.getScene().getWindow().hide();
             controllerobject.NextWindow("main.fxml");
 
         });
@@ -65,12 +69,21 @@ public class UsController {
 
 
 
+
+
         AddAccount.setOnAction(event -> {
-        Controller  controllerobject = new Controller();
-       // AddAccount.getScene().getWindow().hide();
-        controllerobject.NextWindow("addaccount.fxml");
+       // Controller  controllerobject = new Controller();
+        AddAccount.getScene().getWindow().hide();
+      //  controllerobject.NextWindow("addaccount.fxml");
          //   Stage stage = (Stage) AddAccount.getScene().getWindow();
            // stage.close();
+
+            Stage stage = new Stage();
+
+            try{
+                FXMLDocumentController(stage);}
+            catch (Exception e){}
+
         });
 
         initData();
@@ -292,6 +305,15 @@ public class UsController {
         }
         return count;
     }
+
+    protected void FXMLDocumentController(Stage stage) throws IOException {
+        //Загрузили ресурс файла
+        Parent root = FXMLLoader.load(getClass().getResource("addaccount.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 
 
