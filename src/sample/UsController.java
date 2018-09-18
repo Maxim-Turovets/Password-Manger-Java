@@ -41,9 +41,19 @@ public class UsController {
     @FXML
     private Button DeleteAccount;
 
+    @FXML
+    private Button UpdateAccountButton;
 
     @FXML
     private void initialize() {
+
+
+        UpdateAccountButton.setOnAction(event -> {
+            Controller  controllerobject = new Controller();
+             AddAccount.getScene().getWindow().hide();
+            controllerobject.NextWindow("main.fxml");
+
+        });
 
 
       DeleteAccount.setOnAction(event -> {

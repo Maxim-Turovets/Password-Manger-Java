@@ -24,8 +24,7 @@ public class AddAccountController {
     @FXML
     private Button AddAccount;
 
-    @FXML
-    private Button BackButton;
+
 
     @FXML
     private void initialize() {
@@ -34,16 +33,8 @@ public class AddAccountController {
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
 
         });
-
-        BackButton.setOnAction(event -> {
-            Stage stage = (Stage) BackButton.getScene().getWindow();
-
-            Controller controllerobject = new Controller();
-            controllerobject.NextWindow("main.fxml");
-            stage.close();
-
-        });
-    }
+        
+}
 
     public void AddInformationToTableAccount (String log , String pass ,String ema )
     {
