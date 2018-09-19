@@ -30,41 +30,35 @@ public class Controller {
     @FXML
     void initialize() {
 
-       /*    ButtonLogin.setOnAction(event -> {
-
+           ButtonLogin.setOnAction(event -> {
                if(PassText.getText().isEmpty()==false)
                {
                    // если строка не пустая
                    ConnectToBase ob = new ConnectToBase();
                    index=ob.AddPass(PassText.getText());
 
-
                    if(ob.confirmation==true) {
                        ButtonLogin.getScene().getWindow().hide();// если пароль правильный
-                      NextWindow("main.fxml");
-
+                       try{
+                           NextWindow("main.fxml");}
+                       catch (Exception e){}
                    }
                }
-           });*/
+           });
 
-   ButtonLogin.setOnAction(event -> {
-       ButtonLogin.getScene().getWindow().hide();// если пароль правильный
-       Stage stage = new Stage();
 
-       try{
-       FXMLDocumentController(stage);}
-       catch (Exception e){}
-   });
 
         ButtonRegister.setOnAction(event -> {
 
                 ButtonRegister.getScene().getWindow().hide();
-                NextWindow("register.fxml");
+            try{
+                NextWindow("main.fxml");}
+            catch (Exception e){}
         });
 
 
     }
-   public  void  NextWindow (String paht)
+   /*public  void  NextWindow (String paht)
     {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(paht));
@@ -80,10 +74,11 @@ public class Controller {
         stage.setScene(new Scene(root));
         stage.showAndWait();
 
-    }
-    protected void FXMLDocumentController(Stage stage) throws IOException {
-        //Загрузили ресурс файла
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+    }*/
+
+    public  void NextWindow(String paht) throws IOException {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource(paht));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

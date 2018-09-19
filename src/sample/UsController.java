@@ -54,13 +54,15 @@ public class UsController {
 
         UpdateAccountButton.setOnAction(event -> {
             Controller  controllerobject = new Controller();
-          //   AddAccount.getScene().getWindow().hide();
-            controllerobject.NextWindow("main.fxml");
+            AddAccount.getScene().getWindow().hide();
+            try{
+                controllerobject.NextWindow("main.fxml");}
+            catch (Exception e){}
 
         });
 
 
-      DeleteAccount.setOnAction(event -> {
+        DeleteAccount.setOnAction(event -> {
       int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
       tableUsers.getItems().remove(selectedIndex);
       int a=DeleteRow(selectedIndex+1);
@@ -72,18 +74,11 @@ public class UsController {
 
 
         AddAccount.setOnAction(event -> {
-       // Controller  controllerobject = new Controller();
+        Controller  controllerobject = new Controller();
         AddAccount.getScene().getWindow().hide();
-        //  controllerobject.NextWindow("addaccount.fxml");
-        //   Stage stage = (Stage) AddAccount.getScene().getWindow();
-        // stage.close();
-
-        Stage stage = new Stage();
-
-        try{
-            FXMLDocumentController(stage);}
-        catch (Exception e){}
-
+            try{
+                controllerobject.NextWindow("addaccount.fxml");}
+            catch (Exception e){}
     });
 
         initData();
