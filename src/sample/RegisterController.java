@@ -22,14 +22,13 @@ public class RegisterController {
     void initialize() {
 
         RegisterButton.setOnAction(event -> {
-            if(RegisterPass.getText()!="") {
+            if (RegisterPass.getText() != "") {
                 RegisterPass.getScene().getWindow().hide();
-                if(RegisterPass.getText().trim() =="")
-                System.out.print(RegisterPass.getText());
+                if (RegisterPass.getText().trim() == "")
+                    System.out.print(RegisterPass.getText());
                 ConnectToBase ob = new ConnectToBase();
-                Controller.index=ob.Register(RegisterPass.getText());
+                Controller.index = ob.Register(RegisterPass.getText());
                 ob.CreateTable(Controller.index);
-
 
 
                 FXMLLoader loader = new FXMLLoader();

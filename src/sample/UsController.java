@@ -6,17 +6,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
-
 import javafx.scene.control.TableColumn;
 import java.sql.*;
-
 
 
 public class UsController {
 
     private ObservableList<User> usersData = FXCollections.observableArrayList();
-
 
     @FXML
     private TableView<User> tableUsers;
@@ -47,33 +43,32 @@ public class UsController {
 
 
         UpdateAccountButton.setOnAction(event -> {
-            Controller  controllerobject = new Controller();
+            Controller controllerobject = new Controller();
             AddAccount.getScene().getWindow().hide();
-            try{
-                controllerobject.NextWindow("main.fxml");}
-            catch (Exception e){}
+            try {
+                controllerobject.NextWindow("main.fxml");
+            } catch (Exception e) {
+            }
 
         });
 
 
         DeleteAccount.setOnAction(event -> {
-      int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
-      tableUsers.getItems().remove(selectedIndex);
-      int a=DeleteRow(selectedIndex+1);
-      Sort(a);
-  });
-
-
-
+            int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
+            tableUsers.getItems().remove(selectedIndex);
+            int a = DeleteRow(selectedIndex + 1);
+            Sort(a);
+        });
 
 
         AddAccount.setOnAction(event -> {
-        Controller  controllerobject = new Controller();
-        AddAccount.getScene().getWindow().hide();
-            try{
-                controllerobject.NextWindow("addaccount.fxml");}
-            catch (Exception e){}
-    });
+            Controller controllerobject = new Controller();
+            AddAccount.getScene().getWindow().hide();
+            try {
+                controllerobject.NextWindow("addaccount.fxml");
+            } catch (Exception e) {
+            }
+        });
 
         initData();
 
@@ -87,142 +82,123 @@ public class UsController {
         tableUsers.setItems(usersData);
 
 
-
-
     }
 
 
     private void initData() {
 
-        for (int i=1;i<GetValue()+1;i++)
+        for (int i = 1; i < GetValue() + 1; i++)
             usersData.add(new User(i, getLogin(i), getPass(i), getEmail(i)));
-
-
 
     }
 
 
-    public String getLogin (int index )
-    {
-        String LOgin="";
+    public String getLogin(int index) {
+        String LOgin = "";
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
 
 
             Statement state = conn.createStatement();
 
 
-            String stringSQL = "Select  Login  From UserTable  WHERE id="+index;
+            String stringSQL = "Select  Login  From UserTable  WHERE id=" + index;
 
-           state.executeUpdate(stringSQL);
-           try {
-               LOgin = state.executeQuery(stringSQL).getString(1);
-           }
-           catch (Exception e){}
+            state.executeUpdate(stringSQL);
+            try {
+                LOgin = state.executeQuery(stringSQL).getString(1);
+            } catch (Exception e) {
+            }
 
-           conn.close();
+            conn.close();
 
         } catch (Exception e) {
             System.out.print("121212");
         }
-        return  LOgin;
+        return LOgin;
     }
 
-    public String getPass (int index )
-    {
-        String PAss="";
+    public String getPass(int index) {
+        String PAss = "";
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
 
 
             Statement state = conn.createStatement();
 
-            String stringSQL = "Select  password  From UserTable  WHERE id="+index;
+            String stringSQL = "Select  password  From UserTable  WHERE id=" + index;
             // System.out.print(stringSQL);
             state.executeUpdate(stringSQL);
             try {
                 PAss = state.executeQuery(stringSQL).getString(1);
+            } catch (Exception e) {
             }
-            catch (Exception e){}
             conn.close();
-
-
 
 
         } catch (Exception e) {
             System.out.print(e.getMessage());
         }
-        return  PAss;
+        return PAss;
     }
 
-    public String getEmail (int index )
-    {
-        String EMail="";
+    public String getEmail(int index) {
+        String EMail = "";
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
 
 
             Statement state = conn.createStatement();
 
-            String stringSQL = "Select  email  From UserTable  WHERE id="+index;
+            String stringSQL = "Select  email  From UserTable  WHERE id=" + index;
             state.executeUpdate(stringSQL);
             try {
                 EMail = state.executeQuery(stringSQL).getString(1);
+            } catch (Exception e) {
             }
-            catch (Exception e){}
 
             conn.close();
-
-
 
 
         } catch (Exception e) {
             System.out.print(e.getMessage());
         }
-        return  EMail;
+        return EMail;
     }
 
-
-    public  int  GetValue ()
-    {
-    int count = 0;
+    public int GetValue() {
+        int count = 0;
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
             ResultSet res;
 
             Statement state = conn.createStatement();
             Statement state2 = conn.createStatement();
 
 
-                String stringSQL = "SELECT COUNT() FROM UserTable";
-                res = state2.executeQuery(stringSQL);
+            String stringSQL = "SELECT COUNT() FROM UserTable";
+            res = state2.executeQuery(stringSQL);
 
 
             res.next();
 
-            count=res.getInt(1);
+            count = res.getInt(1);
             conn.close();
-
-
 
 
         } catch (Exception e) {
             System.out.print("er");
         }
-     return count;
+        return count;
     }
-
-
-
-
 
     public int DeleteRow(int iD) {
         try {
@@ -231,45 +207,32 @@ public class UsController {
             PreparedStatement delete = conn.prepareStatement("DELETE  FROM UserTable WHERE id = " + iD + ";");
             delete.executeUpdate();
             conn.close();
-        }
-        catch  (Exception e) {
+        } catch (Exception e) {
             System.out.print(e.getMessage());
         }
-        return  iD;
+        return iD;
     }
-
 
     public void Sort(int index) {
         try {
             Class.forName("org.sqlite.JDBC");
 
 
-
-            for (int i = index; i<GetValue()+1;i++)
-            {
+            for (int i = index; i < GetValue() + 1; i++) {
                 Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
-                String stringSQL="UPDATE UserTable SET id="+i+" WHERE id="+(i+1)+";";
+                String stringSQL = "UPDATE UserTable SET id=" + i + " WHERE id=" + (i + 1) + ";";
                 Statement state = conn.createStatement();
                 state.executeUpdate(stringSQL);
-                System.out.print(stringSQL+"\n");
+                System.out.print(stringSQL + "\n");
                 conn.close();
             }
 
 
-        }
-        catch  (Exception e) {
+        } catch (Exception e) {
             System.out.print("aaaaa");
         }
 
     }
-
-
-
-
-
-
-
-
 
 
 }
