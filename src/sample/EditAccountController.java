@@ -10,39 +10,41 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class EditAccountController {
-    
-    @FXML
-    private Button SaveButton;
+
 
     @FXML
-    private TextField AccountLogin;
+    private TextField EditLogin;
 
     @FXML
-    private TextField AccountPass;
+    private TextField EditPass;
 
     @FXML
-    private TextField AccountEmail;
+    private TextField EditEmail;
 
     @FXML
-    private Button BackButton;
+    private Button EditSaveButton;
 
     @FXML
-    private  void initialize()
-    {
+    private Button EditBackButton;
 
-      //  SaveButton.setOnAction(event -> {
-        //    AddInformationToTableAccount(AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
-      //      System.out.print("12345");
-     //  });
+    @FXML
+    private void initialize() {
+
+        EditSaveButton.setOnAction(event -> {
+            AddInformationToTableAccount(EditLogin.getText(), EditPass.getText(), EditEmail.getText());
+
+        });
 
 
-
-        BackButton.setOnAction(event -> {
+        EditBackButton.setOnAction(event -> {
 
             Controller controllerobject = new Controller();
-            try{
-                controllerobject.NextWindow("main.fxml");}
-            catch (Exception e){}
+            EditBackButton.getScene().getWindow().hide();
+            try {
+                controllerobject.NextWindow("main.fxml");
+            } catch (Exception e) {
+                System.out.print(e.getMessage());
+            }
         });
 
         SetValueTable();
@@ -51,30 +53,28 @@ public class EditAccountController {
     }
 
 
-
     public void SetValueTable() {
 
-            UsController uscontrollerobject = new UsController();
-            AccountLogin.setText(uscontrollerobject.getLogin(UsController.numberCol)) ;
-            AccountPass.setText(uscontrollerobject.getPass(UsController.numberCol));
-            AccountEmail.setText(uscontrollerobject.getEmail(UsController.numberCol));
+        UsController uscontrollerobject = new UsController();
+        EditLogin.setText(uscontrollerobject.getLogin(UsController.numberCol));
+        EditPass.setText(uscontrollerobject.getPass(UsController.numberCol));
+        EditEmail.setText(uscontrollerobject.getEmail(UsController.numberCol));
 
 
     }
 
-    public void AddInformationToTableAccount (String log , String pass ,String ema )
-    {
+    public void AddInformationToTableAccount(String log, String pass, String ema) {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
             Statement state = conn.createStatement();
             UsController ob = new UsController();
 
 
-                String stringSQL = "UPDATE  UserTable  SET login="+log+", password="+pass+",email="+ema+";";
-                state.executeUpdate(stringSQL);
-                System.out.print(stringSQL);
+            String stringSQL = "UPDATE  UserTable  SET login='" + log + "', password='" + pass + "',email='" + ema + "' Where id=" + UsController.numberCol + ";";
+            state.executeUpdate(stringSQL);
+            System.out.print(stringSQL);
             conn.close();
 
         } catch (Exception e) {

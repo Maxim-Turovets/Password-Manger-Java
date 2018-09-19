@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditAccountController">
+   <children>
+      <TextField fx:id="EditLogin" layoutX="226.0" layoutY="79.0" />
+      <TextField fx:id="EditPass" layoutX="226.0" layoutY="175.0" />
+      <TextField fx:id="EditEmail" layoutX="226.0" layoutY="276.0" />
+      <Button fx:id="EditSaveButton" layoutX="274.0" layoutY="334.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="EditBackButton" layoutX="28.0" layoutY="30.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>

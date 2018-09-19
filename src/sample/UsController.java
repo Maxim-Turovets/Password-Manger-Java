@@ -59,11 +59,11 @@ public class UsController {
             Controller controllerobject = new Controller();
             UpdateAccountButton.getScene().getWindow().hide();
             try {
-                controllerobject.NextWindow("editaccount.fxml");
+                controllerobject.NextWindow("edit_account.fxml");
            } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
-            System.out.println(Paths.get("editaccount.fxml").toAbsolutePath());
+         //   System.out.println(Paths.get("editaccount.fxml").toAbsolutePath());
 
 
         });
