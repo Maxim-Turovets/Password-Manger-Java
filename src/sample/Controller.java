@@ -35,7 +35,7 @@ public class Controller {
                {
                    // если строка не пустая
                    ConnectToBase ob = new ConnectToBase();
-                   index=ob.AddPass(PassText.getText());
+                   index=ob.PasswordMatchChecker(PassText.getText());
 
                    if(ob.confirmation==true) {
                        ButtonLogin.getScene().getWindow().hide();// если пароль правильный
@@ -52,7 +52,7 @@ public class Controller {
 
                 ButtonRegister.getScene().getWindow().hide();
             try{
-                NextWindow("main.fxml");}
+                NextWindow("register.fxml");}
             catch (Exception e){}
         });
 

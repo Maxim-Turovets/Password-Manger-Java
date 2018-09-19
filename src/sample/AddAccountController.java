@@ -32,6 +32,7 @@ public class AddAccountController {
         AddAccount.setOnAction(event -> {
 
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
+            ClearText();
         });
 
         BackButton.setOnAction(event -> {
@@ -52,22 +53,28 @@ public class AddAccountController {
 
             Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
             Statement state = conn.createStatement();
-            Statement state22 = conn.createStatement();
             UsController ob = new UsController();
 
             if(ob.GetValue()<1) {
                 String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+1+ ",'" + log + "','" + pass + "','" + ema + "')";
-                state22.executeUpdate(stringSQL);
+                state.executeUpdate(stringSQL);
             }
             else {
                 String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+"'"+(ob.GetValue()+1)+ "','" + log + "','" + pass + "','" + ema + "')";
-                state22.executeUpdate(stringSQL);
+                state.executeUpdate(stringSQL);
             }
             conn.close();
 
         } catch (Exception e) {
             System.out.print(e.getMessage());
         }
+    }
+
+    private  void ClearText()
+    {
+        AccountLogin.setText("");
+        AccountPass.setText("");
+        AccountEmail.setText("");
     }
 
 
