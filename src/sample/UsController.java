@@ -43,6 +43,11 @@ public class UsController {
 
 
         UpdateAccountButton.setOnAction(event -> {
+            int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
+            tableUsers.getItems().remove(selectedIndex);
+            int a = DeleteRow(selectedIndex + 1);
+
+
             Controller controllerobject = new Controller();
             AddAccount.getScene().getWindow().hide();
             try {
