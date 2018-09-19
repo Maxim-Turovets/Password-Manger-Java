@@ -3,12 +3,16 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
-
 import java.sql.Statement;
 
-public class AddAccountController {
+public class EditAccountController {
+    
+    @FXML
+    private Button SaveButton;
 
     @FXML
     private TextField AccountLogin;
@@ -20,25 +24,20 @@ public class AddAccountController {
     private TextField AccountEmail;
 
     @FXML
-    private Button AddAccount;
-
-    @FXML
     private Button BackButton;
 
-
-
-
-
     @FXML
-    private void initialize() {
-        AddAccount.setOnAction(event -> {
+    private  void initialize()
+    {
 
-            AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
-            ClearText();
-        });
+      //  SaveButton.setOnAction(event -> {
+        //    AddInformationToTableAccount(AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
+      //      System.out.print("12345");
+     //  });
+
+
 
         BackButton.setOnAction(event -> {
-            BackButton.getScene().getWindow().hide();
 
             Controller controllerobject = new Controller();
             try{
@@ -46,7 +45,22 @@ public class AddAccountController {
             catch (Exception e){}
         });
 
-}
+        SetValueTable();
+
+
+    }
+
+
+
+    public void SetValueTable() {
+
+            UsController uscontrollerobject = new UsController();
+            AccountLogin.setText(uscontrollerobject.getLogin(UsController.numberCol)) ;
+            AccountPass.setText(uscontrollerobject.getPass(UsController.numberCol));
+            AccountEmail.setText(uscontrollerobject.getEmail(UsController.numberCol));
+
+
+    }
 
     public void AddInformationToTableAccount (String log , String pass ,String ema )
     {
@@ -57,27 +71,14 @@ public class AddAccountController {
             Statement state = conn.createStatement();
             UsController ob = new UsController();
 
-            if(ob.GetValue()<1) {
-                String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+1+ ",'" + log + "','" + pass + "','" + ema + "')";
+
+                String stringSQL = "UPDATE  UserTable  SET login="+log+", password="+pass+",email="+ema+";";
                 state.executeUpdate(stringSQL);
-            }
-            else {
-                String stringSQL = "INSERT INTO  UserTable ( id ,login,password,email) VALUES  ("+"'"+(ob.GetValue()+1)+ "','" + log + "','" + pass + "','" + ema + "')";
-                state.executeUpdate(stringSQL);
-            }
+                System.out.print(stringSQL);
             conn.close();
 
         } catch (Exception e) {
             System.out.print(e.getMessage());
         }
     }
-
-    private  void ClearText()
-    {
-        AccountLogin.setText("");
-        AccountPass.setText("");
-        AccountEmail.setText("");
-    }
-
-
 }

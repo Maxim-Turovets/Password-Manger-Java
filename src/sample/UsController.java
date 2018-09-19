@@ -3,14 +3,22 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.TableColumn;
+import javafx.stage.Stage;
+
+import java.nio.file.Paths;
 import java.sql.*;
 
 
 public class UsController {
+
+    public  static  int numberCol;
 
     private ObservableList<User> usersData = FXCollections.observableArrayList();
 
@@ -38,22 +46,25 @@ public class UsController {
     @FXML
     private Button UpdateAccountButton;
 
+
     @FXML
     private void initialize() {
 
 
+
         UpdateAccountButton.setOnAction(event -> {
-            int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
-            tableUsers.getItems().remove(selectedIndex);
-            int a = DeleteRow(selectedIndex + 1);
-
-
+            int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex()+1;
+           // System.out.print(selectedIndex);
+            numberCol = selectedIndex;
             Controller controllerobject = new Controller();
-            AddAccount.getScene().getWindow().hide();
+            UpdateAccountButton.getScene().getWindow().hide();
             try {
-                controllerobject.NextWindow("main.fxml");
-            } catch (Exception e) {
+                controllerobject.NextWindow("editaccount.fxml");
+           } catch (Exception e) {
+                System.out.print(e.getMessage());
             }
+            System.out.println(Paths.get("editaccount.fxml").toAbsolutePath());
+
 
         });
 
