@@ -58,6 +58,7 @@ public class UsController {
             numberCol = selectedIndex;
             Controller controllerobject = new Controller();
             UpdateAccountButton.getScene().getWindow().hide();
+
             try {
                 controllerobject.NextWindow("edit_account.fxml");
            } catch (Exception e) {

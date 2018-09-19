@@ -1,5 +1,6 @@
 package sample;
 
+import java.awt.desktop.SystemSleepEvent;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
@@ -8,13 +9,21 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.scene.effect.GaussianBlur;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import static java.lang.Thread.sleep;
 
 
 public class Controller {
 
 
     public static int index;
+
+
+    @FXML
+    private AnchorPane Background;
 
     @FXML
     private Button ButtonRegister;
@@ -28,7 +37,13 @@ public class Controller {
 
     @FXML
     void initialize() {
+
+
+
+
+
         ButtonLogin.setOnAction(event -> {
+
             if (PassText.getText().isEmpty() == false) {
 
                 ConnectToBase ob = new ConnectToBase();
@@ -42,6 +57,10 @@ public class Controller {
                     }
                 }
             }
+
+
+
+
         });
 
         ButtonRegister.setOnAction(event -> {
@@ -57,11 +76,13 @@ public class Controller {
 
     public void NextWindow(String paht) throws IOException {
         Stage stage = new Stage();
+        // stage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource(paht));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
 
 }
 
