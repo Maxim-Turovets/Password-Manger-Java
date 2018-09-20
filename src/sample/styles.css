@@ -1,3 +1,5 @@
+}
+
 .table-view{
    -fx-background-color: #5A48FF;
    -fx-background-image : url("Images/background.png");
@@ -23,19 +25,27 @@
 }
 
 .table-view .table-cell{
-    -fx-text-fill: #CEFF9F; 
+	
+	
+	-fx-text-fill: #000000; 
 }
 
-.table-row-cell{
-   -fx-background-image : url("Images/table.png");
-    -fx-text-fill: #9BC414;
-}
 
 
 
 .table-row-cell:selected {
-	-fx-background-image : url("Images/panel.png");
+	-fx-background-image : url("Images/table2.png");
     -fx-background-color: #f26e46;
     -fx-text-fill: #373535;
 }
 
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: -fx-background;
+}
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}

@@ -13,9 +13,9 @@
             <Image url="@Images/background.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tableUsers" layoutX="126.0" layoutY="143.0" prefHeight="422.0" prefWidth="596.0" stylesheets="@styles.css">
+      <TableView fx:id="tableUsers" layoutX="126.0" layoutY="143.0" prefHeight="422.0" prefWidth="596.0" styleClass="blueTable" stylesheets="@styles.css">
          <columns>
-            <TableColumn fx:id="idColumn" prefWidth="80.0" text="№" />
+            <TableColumn fx:id="idColumn" minWidth="20.0" text="№" />
             <TableColumn fx:id="loginColumn" prefWidth="150.0" text="Name" />
             <TableColumn fx:id="passwordColumn" prefWidth="150.0" text="Login" />
             <TableColumn fx:id="emailColumn" prefWidth="260.0" text="Password" />
