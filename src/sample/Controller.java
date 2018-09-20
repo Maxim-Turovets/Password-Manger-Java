@@ -24,8 +24,6 @@ public class Controller {
     public static int index;
 
 
-    @FXML
-    private AnchorPane Background;
 
     @FXML
     private Button ButtonRegister;
