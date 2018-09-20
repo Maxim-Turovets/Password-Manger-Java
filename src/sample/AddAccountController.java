@@ -3,6 +3,9 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -26,11 +29,30 @@ public class AddAccountController {
     private Button BackButton;
 
 
+    @FXML
+    private ImageView Im;
+
+
 
 
 
     @FXML
     private void initialize() {
+        Im.setOnMouseClicked(event -> {
+            System.out.println("IMAGE");
+          //  Image image = new Image("q.jpeg");
+         //   Im = new  ImageView(image);
+        });
+
+        Im.setOnMouseMoved(event -> {
+            System.out.println("IMAGE");
+           // Image image = new Image("q.jpeg");
+           // Im = new  ImageView(image);
+         //   Im.setImage(image);
+         //   Im.setSmooth(true);
+         //   Im.setPreserveRatio(true);
+        });
+
         AddAccount.setOnAction(event -> {
 
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());

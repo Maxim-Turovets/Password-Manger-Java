@@ -9,7 +9,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Background" focusTraversable="true" maxHeight="784.0" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="784.0" prefWidth="700.0" style="-fx-background-color: #F5F6CE;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane fx:id="Background" accessibleRole="IMAGE_VIEW" focusTraversable="true" maxHeight="791.0" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <AnchorPane prefHeight="124.0" prefWidth="700.0" style="-fx-background-color: #088A08;">
          <children>
@@ -29,12 +29,12 @@
             <Button fx:id="ButtonRegister" layoutX="588.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #81DAF5;" text="Register" />
          </children>
       </AnchorPane>
-      <PasswordField fx:id="PassText" layoutX="267.0" layoutY="370.0" prefHeight="43.0" prefWidth="197.0" promptText="password">
+      <PasswordField fx:id="PassText" layoutX="251.0" layoutY="311.0" prefHeight="43.0" prefWidth="197.0" promptText="password">
          <font>
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Button fx:id="ButtonLogin" layoutX="299.0" layoutY="535.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #FF8000;" text="L o g i n" textFill="#64c813">
+      <Button fx:id="ButtonLogin" layoutX="276.0" layoutY="423.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="133.0" style="-fx-background-color: #FF8000; -fx-background-image: url(&quot;@../../../../../Desktop/depositphotos_48339329-stock-photo-blue-and-black-technology-interface.jpg&quot;);;" text="L o g i n" textFill="#64c813">
          <font>
             <Font name="Verdana" size="19.0" />
          </font>

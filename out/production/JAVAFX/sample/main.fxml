@@ -8,7 +8,7 @@
 <AnchorPane id="AnchorPane" maxHeight="400" maxWidth="624" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsController">
     <children>
         <!-- Таблица в которую мы будем выводит наш pojo -->
-        <TableView fx:id="tableUsers" layoutX="12.0" layoutY="62.0" prefHeight="324.0" prefWidth="600.0">
+        <TableView fx:id="tableUsers" layoutX="12.0" layoutY="62.0" prefHeight="324.0" prefWidth="600.0" styleClass="blueTable" >
             <columns>
                 <!-- Колонки таблицы -->
                 <TableColumn fx:id="idColumn" prefWidth="80.0" text="№" />
@@ -19,6 +19,6 @@
         </TableView>
       <Button fx:id="AddAccount" layoutX="572.0" layoutY="17.0" mnemonicParsing="false" text="Add" />
       <Button fx:id="DeleteAccount" layoutX="511.0" layoutY="17.0" mnemonicParsing="false" text="Delete" />
-      <Button fx:id="UpdateAccountButton" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" text="Edit" />
+      <Button fx:id="UpdateAccountButton" layoutX="14.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" text="Edit" />
     </children>
 </AnchorPane>
