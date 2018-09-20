@@ -38,7 +38,7 @@ public class EditAccountController {
 
         EditBackButton.setOnAction(event -> {
 
-            Controller controllerobject = new Controller();
+            HomePageController controllerobject = new HomePageController();
             EditBackButton.getScene().getWindow().hide();
             try {
                 controllerobject.NextWindow("main.fxml");
@@ -67,7 +67,7 @@ public class EditAccountController {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + HomePageController.index + ".db");
             Statement state = conn.createStatement();
             UsController ob = new UsController();
 

@@ -1,7 +1,41 @@
-.Im{ 
-    -fx-graphic: url("q.jpeg"); 
-} 
+.table-view{
+   -fx-background-color: #5A48FF;
+   -fx-background-image : url("Images/background.png");
+}
 
-.Im:hover { 
-    -fx-graphic: url("q.jpeg"); 
-} 
+.table-view:focused{
+    -fx-background-color: #5A48FF;
+}
+
+.table-view .column-header-background{
+	
+    -fx-background-color: #A89FFF;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: linear-gradient(#373535 70%, #f26e46 100%);
+}
+
+.table-view .column-header {
+	 
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #CEFF9F; 
+}
+
+.table-row-cell{
+   -fx-background-image : url("Images/table.png");
+    -fx-text-fill: #9BC414;
+}
+
+
+
+.table-row-cell:selected {
+	-fx-background-image : url("Images/panel.png");
+    -fx-background-color: #f26e46;
+    -fx-text-fill: #373535;
+}
+

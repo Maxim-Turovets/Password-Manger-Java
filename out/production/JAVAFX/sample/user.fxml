@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsController">
+   <children>
+      <ImageView fitHeight="648.0" fitWidth="854.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/background.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableUsers" layoutX="126.0" layoutY="143.0" prefHeight="422.0" prefWidth="596.0" stylesheets="@styles.css">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="80.0" text="№" />
+            <TableColumn fx:id="loginColumn" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="passwordColumn" prefWidth="150.0" text="Login" />
+            <TableColumn fx:id="emailColumn" prefWidth="260.0" text="Password" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="AddAccount" fitHeight="90.0" fitWidth="65.0" layoutX="767.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/addaccount.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="DeleteAccount" fitHeight="77.0" fitWidth="65.0" layoutX="708.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/deleteaccount.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EditButton" fitHeight="77.0" fitWidth="65.0" layoutX="28.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/edit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

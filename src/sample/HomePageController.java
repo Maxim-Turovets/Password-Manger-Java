@@ -36,14 +36,14 @@ public class HomePageController {
             if (PassText.getText().isEmpty() == false) {
 
                 ConnectToBase ob = new ConnectToBase();
-                index = ob.PasswordMatchChecker(PassText.getText());
+                HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
 
 
                 if (ob.confirmation == true) {
                     ButtonLogin.getScene().getWindow().hide();// если пароль правильный
                     try {
-                        NextWindow("main.fxml");
+                        NextWindow("user.fxml");
                     } catch (Exception e) {
                     }
                 }

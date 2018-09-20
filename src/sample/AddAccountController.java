@@ -39,13 +39,13 @@ public class AddAccountController {
     @FXML
     private void initialize() {
         Im.setOnMouseClicked(event -> {
-            System.out.println("IMAGE");
+           // System.out.println("IMAGE");
           //  Image image = new Image("q.jpeg");
          //   Im = new  ImageView(image);
         });
 
         Im.setOnMouseMoved(event -> {
-            System.out.println("IMAGE");
+          //  System.out.println("IMAGE");
            // Image image = new Image("q.jpeg");
            // Im = new  ImageView(image);
          //   Im.setImage(image);
@@ -62,9 +62,9 @@ public class AddAccountController {
         BackButton.setOnAction(event -> {
             BackButton.getScene().getWindow().hide();
 
-            Controller controllerobject = new Controller();
+            HomePageController controllerobject = new HomePageController();
             try{
-                controllerobject.NextWindow("main.fxml");}
+                controllerobject.NextWindow("user.fxml");}
             catch (Exception e){}
         });
 
@@ -75,7 +75,7 @@ public class AddAccountController {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+Controller.index+".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser"+HomePageController.index+".db");
             Statement state = conn.createStatement();
             UsController ob = new UsController();
 

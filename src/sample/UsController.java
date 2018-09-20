@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.TableColumn;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.nio.file.Paths;
@@ -38,13 +39,13 @@ public class UsController {
     private TableColumn<User, String> emailColumn;
 
     @FXML
-    private Button AddAccount;
+    private ImageView EditButton;
 
     @FXML
-    private Button DeleteAccount;
+    private ImageView AddAccount;
 
     @FXML
-    private Button UpdateAccountButton;
+    private ImageView DeleteAccount;
 
 
     @FXML
@@ -52,12 +53,12 @@ public class UsController {
 
 
 
-        UpdateAccountButton.setOnAction(event -> {
+        EditButton.setOnMouseClicked(event -> {
             int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex()+1;
            // System.out.print(selectedIndex);
             numberCol = selectedIndex;
-            Controller controllerobject = new Controller();
-            UpdateAccountButton.getScene().getWindow().hide();
+            HomePageController controllerobject = new HomePageController();
+            EditButton.getScene().getWindow().hide();
 
             try {
                 controllerobject.NextWindow("edit_account.fxml");
@@ -70,7 +71,7 @@ public class UsController {
         });
 
 
-        DeleteAccount.setOnAction(event -> {
+        DeleteAccount.setOnMouseClicked(event -> {
             int selectedIndex = tableUsers.getSelectionModel().getSelectedIndex();
             tableUsers.getItems().remove(selectedIndex);
             int a = DeleteRow(selectedIndex + 1);
@@ -78,8 +79,8 @@ public class UsController {
         });
 
 
-        AddAccount.setOnAction(event -> {
-            Controller controllerobject = new Controller();
+        AddAccount.setOnMouseClicked(event -> {
+            HomePageController controllerobject = new HomePageController();
             AddAccount.getScene().getWindow().hide();
             try {
                 controllerobject.NextWindow("addaccount.fxml");
@@ -115,7 +116,7 @@ public class UsController {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + HomePageController.index + ".db");
 
 
             Statement state = conn.createStatement();
@@ -142,7 +143,7 @@ public class UsController {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + HomePageController.index + ".db");
 
 
             Statement state = conn.createStatement();
@@ -168,7 +169,7 @@ public class UsController {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + HomePageController.index + ".db");
 
 
             Statement state = conn.createStatement();
@@ -194,7 +195,7 @@ public class UsController {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + HomePageController.index + ".db");
             ResultSet res;
 
             Statement state = conn.createStatement();
@@ -220,7 +221,7 @@ public class UsController {
     public int DeleteRow(int iD) {
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + HomePageController.index + ".db");
             PreparedStatement delete = conn.prepareStatement("DELETE  FROM UserTable WHERE id = " + iD + ";");
             delete.executeUpdate();
             conn.close();
@@ -236,7 +237,7 @@ public class UsController {
 
 
             for (int i = index; i < GetValue() + 1; i++) {
-                Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + Controller.index + ".db");
+                Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBaseUser" + HomePageController.index + ".db");
                 String stringSQL = "UPDATE UserTable SET id=" + i + " WHERE id=" + (i + 1) + ";";
                 Statement state = conn.createStatement();
                 state.executeUpdate(stringSQL);
