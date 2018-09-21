@@ -1,12 +1,20 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
 }
 
 .table-view{
    -fx-background-color: #5A48FF;
    -fx-background-image : url("Images/background.png");
+
 }
 
 .table-view:focused{
     -fx-background-color: #5A48FF;
+	
 }
 
 .table-view .column-header-background{
@@ -25,8 +33,6 @@
 }
 
 .table-view .table-cell{
-	
-	
 	-fx-text-fill: #000000; 
 }
 
@@ -43,9 +49,4 @@
     -fx-cell-size: 40px;
 }
 
-.table-row-cell:empty {
-    -fx-background-color: -fx-background;
-}
-.table-row-cell:empty .table-cell {
-    -fx-border-width: 0px;
-}
+

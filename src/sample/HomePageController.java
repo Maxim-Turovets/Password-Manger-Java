@@ -8,8 +8,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import sample.ConnectToBase;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -66,6 +67,8 @@ public class HomePageController {
         // stage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource(paht));
         Scene scene = new Scene(root);
+     //   scene.setFill(Color.TRANSPARENT);
+      //  stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();
     }

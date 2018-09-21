@@ -23,43 +23,24 @@ public class AddAccountController {
     private TextField AccountEmail;
 
     @FXML
-    private Button AddAccount;
-
-    @FXML
-    private Button BackButton;
+    private ImageView AddAccount;
 
 
     @FXML
-    private ImageView Im;
-
-
+    private ImageView BackButton;
 
 
 
     @FXML
     private void initialize() {
-        Im.setOnMouseClicked(event -> {
-           // System.out.println("IMAGE");
-          //  Image image = new Image("q.jpeg");
-         //   Im = new  ImageView(image);
-        });
 
-        Im.setOnMouseMoved(event -> {
-          //  System.out.println("IMAGE");
-           // Image image = new Image("q.jpeg");
-           // Im = new  ImageView(image);
-         //   Im.setImage(image);
-         //   Im.setSmooth(true);
-         //   Im.setPreserveRatio(true);
-        });
 
-        AddAccount.setOnAction(event -> {
-
+        AddAccount.setOnMouseClicked(event -> {
             AddInformationToTableAccount( AccountLogin.getText(),AccountPass.getText(),AccountEmail.getText());
             ClearText();
         });
 
-        BackButton.setOnAction(event -> {
+        BackButton.setOnMouseClicked(event -> {
             BackButton.getScene().getWindow().hide();
 
             HomePageController controllerobject = new HomePageController();
@@ -100,6 +81,7 @@ public class AddAccountController {
         AccountPass.setText("");
         AccountEmail.setText("");
     }
+
 
 
 }

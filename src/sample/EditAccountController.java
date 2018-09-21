@@ -1,16 +1,17 @@
 package sample;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
-
+import javafx.scene.image.ImageView;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class EditAccountController {
 
+
+    @FXML
+    private ImageView EditSaveButton;
 
     @FXML
     private TextField EditLogin;
@@ -22,26 +23,23 @@ public class EditAccountController {
     private TextField EditEmail;
 
     @FXML
-    private Button EditSaveButton;
-
-    @FXML
-    private Button EditBackButton;
+    private ImageView EditBackButton;
 
     @FXML
     private void initialize() {
 
-        EditSaveButton.setOnAction(event -> {
+        EditSaveButton.setOnMouseClicked(event -> {
             AddInformationToTableAccount(EditLogin.getText(), EditPass.getText(), EditEmail.getText());
 
         });
 
 
-        EditBackButton.setOnAction(event -> {
+        EditBackButton.setOnMouseClicked(event -> {
 
             HomePageController controllerobject = new HomePageController();
             EditBackButton.getScene().getWindow().hide();
             try {
-                controllerobject.NextWindow("main.fxml");
+                controllerobject.NextWindow("user.fxml");
             } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
