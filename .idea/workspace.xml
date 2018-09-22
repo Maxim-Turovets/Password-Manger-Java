@@ -183,7 +183,7 @@
     <session id="2073510316">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -192,20 +192,21 @@
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="61" />
-          <entry key="java" value="3926" />
+          <entry key="java" value="4060" />
           <entry key="sql" value="201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3925" />
+          <entry key="JAVA" value="4059" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="201" />
           <entry key="XML" value="61" />
@@ -278,14 +279,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1787#2057#0" />
+                <element signature="e#753#1445#0" />
                 <element signature="method#createTablePassword#0;class#HomePageController#0" />
                 <element signature="method#createTableRemember#0;class#HomePageController#0" />
                 <element signature="method#getRememberPassword#0;class#HomePageController#0" />
@@ -297,11 +297,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="320">
+              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -309,7 +309,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
+            <state relative-caret-position="425">
               <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="method#PasswordMatchChecker#0;class#ConnectToBase#0" />
@@ -321,7 +321,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="527">
               <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
@@ -330,7 +330,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/AddAccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="918">
               <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="148" />
             </state>
           </provider>
@@ -339,8 +339,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="28" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -348,7 +348,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/EditAccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="578">
               <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
             </state>
           </provider>
@@ -357,8 +357,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="131" selection-end-column="13" />
+            <state relative-caret-position="309">
+              <caret line="66" column="10" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="66" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -440,14 +440,14 @@
         <option value="$PROJECT_DIR$/JAVAFX.iml" />
         <option value="$PROJECT_DIR$/src/sample/addaccount.fxml" />
         <option value="$PROJECT_DIR$/src/sample/user.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
         <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
         <option value="$PROJECT_DIR$/src/sample/EditAccountController.java" />
-        <option value="$PROJECT_DIR$/src/sample/RegisterController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
         <option value="$PROJECT_DIR$/src/sample/HomePageController.java" />
+        <option value="$PROJECT_DIR$/src/sample/RegisterController.java" />
       </list>
     </option>
   </component>
@@ -484,8 +484,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -513,7 +514,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -660,12 +660,13 @@
       <workItem from="1537527859134" duration="4140000" />
       <workItem from="1537614878605" duration="931000" />
       <workItem from="1537616644152" duration="2686000" />
-      <workItem from="1537623346037" duration="19569000" />
+      <workItem from="1537623346037" duration="19850000" />
+      <workItem from="1537654638609" duration="2033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198614000" />
+    <option name="totallyTimeSpent" value="200928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,7 +681,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28322148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2872483" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -689,7 +690,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2851064" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39574468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -701,7 +702,7 @@
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.3291815" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="15" weight="0.3291815" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32907802" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
@@ -985,44 +986,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="131" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EditAccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="527">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AddAccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="918">
           <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="28" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EditAccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="425">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="method#PasswordMatchChecker#0;class#ConnectToBase#0" />
@@ -1030,20 +1024,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="309">
+          <caret line="66" column="10" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="66" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1787#2057#0" />
+            <element signature="e#753#1445#0" />
             <element signature="method#createTablePassword#0;class#HomePageController#0" />
             <element signature="method#createTableRemember#0;class#HomePageController#0" />
             <element signature="method#getRememberPassword#0;class#HomePageController#0" />
@@ -1051,6 +1044,13 @@
             <element signature="method#setRememberBool#0;class#HomePageController#0" />
             <element signature="method#getRememberBool#0;class#HomePageController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
         </state>
       </provider>
     </entry>

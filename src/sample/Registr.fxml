@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
    <children>
-      <ImageView fitHeight="620.0" fitWidth="840.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="620.0" fitWidth="827.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/singbackground.png" />
          </image>
@@ -22,6 +21,21 @@
       <ImageView fx:id="RegisterButton" fitHeight="62.0" fitWidth="302.0" layoutX="269.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/regisretbutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closebutton" fitHeight="21.0" fitWidth="30.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/closebutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="collapsebutton" fitHeight="21.0" fitWidth="21.0" layoutX="42.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/collapse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="70.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/green.png" />
          </image>
       </ImageView>
    </children>

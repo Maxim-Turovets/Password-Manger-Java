@@ -33,8 +33,9 @@ public class Main extends Application {
         {
             Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
             primaryStage.setTitle("Hello World");
+            Scene scene = new Scene(root, 853, 630);
+            primaryStage.setScene(scene);
 
-            primaryStage.setScene(new Scene(root, 853, 630));
             primaryStage.show();
         }
     }

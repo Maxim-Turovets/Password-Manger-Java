@@ -49,9 +49,22 @@ public class UsController {
 
 
     @FXML
+    private ImageView closebutton;
+
+    @FXML
+    private ImageView collapsebutton;
+
+
+    @FXML
     private void initialize() {
 
-       // loginColumn.setF
+        collapsebutton.setOnMouseClicked(event -> {
+            Stage stage = (Stage) collapsebutton.getScene().getWindow();
+            stage.setIconified(true);
+        });
+       closebutton.setOnMouseClicked(event -> {
+           closebutton.getScene().getWindow().hide();;
+       });
 
 
         EditButton.setOnMouseClicked(event -> {

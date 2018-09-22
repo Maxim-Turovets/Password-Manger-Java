@@ -7,14 +7,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="sample.UsController" >
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsController">
    <children>
       <ImageView fitHeight="648.0" fitWidth="854.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/background.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tableUsers" editable="true" layoutX="129.0" layoutY="149.0" prefHeight="422.0" prefWidth="596.0" style="-fx-border-radius: 0 0 18 18;" styleClass="blueTable" stylesheets="@styles.css" tableMenuButtonVisible="true">
+      <TableView fx:id="tableUsers" editable="true" layoutX="129.0" layoutY="149.0" opacity="0.79" prefHeight="422.0" prefWidth="596.0" style="-fx-border-radius: 0 0 18 18;" styleClass="blueTable" stylesheets="@styles.css" tableMenuButtonVisible="true">
          <columns>
             <TableColumn fx:id="idColumn" minWidth="20.0" text="№" />
             <TableColumn fx:id="loginColumn" prefWidth="150.0" text="Name" />
@@ -38,6 +38,21 @@
       <ImageView fx:id="EditButton" fitHeight="36.0" fitWidth="30.0" layoutX="129.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closebutton" fitHeight="21.0" fitWidth="30.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/closebutton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="collapsebutton" fitHeight="21.0" fitWidth="21.0" layoutX="32.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/collapse.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="60.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/green.png" />
          </image>
       </ImageView>
    </children>

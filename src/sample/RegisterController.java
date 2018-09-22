@@ -22,7 +22,21 @@ public class RegisterController {
     private ImageView RegisterButton;
 
     @FXML
+    private ImageView closebutton;
+
+    @FXML
+    private ImageView collapsebutton;
+
+    @FXML
     void initialize() {
+        collapsebutton.setOnMouseClicked(event -> {
+            Stage stage = (Stage) collapsebutton.getScene().getWindow();
+            stage.setIconified(true);
+        });
+
+        closebutton.setOnMouseClicked(event -> {
+            closebutton.getScene().getWindow().hide();;
+        });
 
         RegisterButton.setOnMouseClicked(event -> {
             if (RegisterPass.getText() != "") {

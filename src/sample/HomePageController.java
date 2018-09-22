@@ -9,14 +9,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
+
 import java.sql.Statement;
 
 
@@ -37,7 +34,23 @@ public class HomePageController {
     private CheckBox checremember;
 
     @FXML
+    private ImageView closebutton;
+
+    @FXML
+    private ImageView collapsebutton;
+
+    @FXML
     void initialize() {
+
+        collapsebutton.setOnMouseClicked(event -> {
+            Stage stage = (Stage) collapsebutton.getScene().getWindow();
+            stage.setIconified(true);
+        });
+
+        closebutton.setOnMouseClicked(event -> {
+            closebutton.getScene().getWindow().hide();;
+        });
+
         ButtonLogin.setOnMouseClicked(event -> {
             if (PassText.getText().isEmpty() == false) {
 
@@ -59,7 +72,8 @@ public class HomePageController {
             }
         });
         ButtonRegister.setOnAction(event -> {
-                ButtonRegister.getScene().getWindow().hide();
+               ButtonRegister.getScene().getWindow().hide();
+
                 try {
                     NextWindow("Registr.fxml");
                 } catch (Exception e) {
@@ -71,11 +85,14 @@ public class HomePageController {
 
     public void NextWindow(String paht) throws IOException {
         Stage stage = new Stage();
-        // stage.setResizable(false);
+         stage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource(paht));
         Scene scene = new Scene(root);
          //  scene.setFill(Color.TRANSPARENT);
         //  stage.initStyle(StageStyle.TRANSPARENT);
+
+
+
         stage.setScene(scene);
         stage.show();
     }
