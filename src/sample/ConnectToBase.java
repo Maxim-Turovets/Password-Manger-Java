@@ -49,8 +49,6 @@ public class ConnectToBase {
                 System.out.println(HomePageController.index);
 
 
-
-                state.executeQuery(stringSQL);
                 connection.close();
 
             } catch (Exception e) {

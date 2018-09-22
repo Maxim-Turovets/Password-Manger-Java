@@ -13,23 +13,30 @@ public class Main extends Application {
     public void start(Stage primaryStage)
             throws Exception{
         HomePageController ob= new HomePageController();
+
        ob.createTableRemember();
-  //     ob.createTablePassword();
-/*
+       ob.createTablePassword();
+
         if(ob.getRememberBool().equals("yes"))
         {
-            Parent root = FXMLLoader.load(getClass().getResource("user.fxml"));
-            primaryStage.setTitle("Hello World");
-            primaryStage.setScene(new Scene(root, 853, 630));
-            primaryStage.show();
+            ConnectToBase ob2 = new ConnectToBase();
+            HomePageController.index = ob2.PasswordMatchChecker(ob.getRememberPassword());
+            System.out.println("  PassRemember == "+ ob.getRememberPassword());
+            System.out.println("  INDEX== "+ HomePageController.index);
+        //    ButtonLogin.getScene().getWindow().hide();
+            try {
+                ob.NextWindow("user.fxml");
+            } catch (Exception e) {
+                System.out.println("Не тот пароль ");
+            }
         }
         else
-        {*/
+        {
             Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
             primaryStage.setTitle("Hello World");
             primaryStage.setScene(new Scene(root, 853, 630));
             primaryStage.show();
-     //   }
+        }
     }
 
 

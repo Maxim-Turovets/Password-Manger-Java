@@ -38,38 +38,33 @@ public class HomePageController {
 
     @FXML
     void initialize() {
-      //  createTablePassword();
-      //  createTableRemember();
-    //    setRememberBool("no");
-         //  setRememberPassword("sdfsdfg");
 
 
 
 
+        
+        ButtonLogin.setOnMouseClicked(event -> {
+            if (PassText.getText().isEmpty() == false) {
 
-            ButtonLogin.setOnMouseClicked(event -> {
-                if (PassText.getText().isEmpty() == false) {
+                ConnectToBase ob = new ConnectToBase();
+                HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
-                    ConnectToBase ob = new ConnectToBase();
-                    HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
-
-                    if (ob.confirmation == true) {
-                   //     ButtonLogin.getScene().getWindow().hide();// если пароль правильный\
-
-                       setRememberPassword(PassText.getText());
-                     //   setRememberBool("yes");
-                        ButtonLogin.getScene().getWindow().hide();
-                        try {
-                            NextWindow("user.fxml");
-                        } catch (Exception e) {
-                            System.out.println("Не тот пароль ");
-                        }
-
+                if (ob.confirmation == true) {
+                    if(checremember.isSelected()) {
+                        setRememberPassword(PassText.getText());
+                        setRememberBool("yes");
                     }
-
+                    ButtonLogin.getScene().getWindow().hide();
+                    try {
+                        NextWindow("user.fxml");
+                    } catch (Exception e) {
+                    }
                 }
-                System.out.println("222222222222222222222222");
-            });
+            }
+        });
+
+
+
 
             ButtonRegister.setOnAction(event -> {
                 ButtonRegister.getScene().getWindow().hide();
@@ -123,7 +118,7 @@ public class HomePageController {
         }
     }
 
-    private String getRememberPassword() {
+    public String getRememberPassword() {
         String pass = "";
         try {
             Class.forName("org.sqlite.JDBC");
@@ -132,15 +127,15 @@ public class HomePageController {
             Statement state = conn.createStatement();
 
 
-            String stringSQL = "Select  password  From  RememberTable   WHERE id=" + 1;
+            String stringSQL = "Select  Password  From  RememberTable   WHERE id=1";
 
-            state.executeUpdate(stringSQL);
-            conn.close();
+           state.executeUpdate(stringSQL);
+         //   conn.close();
             try {
                 pass = state.executeQuery(stringSQL).getString(1);
             } catch (Exception e) {
             }
-
+          System.out.println("Remember PAss = "+pass);
             conn.close();
 
         } catch (Exception e) {

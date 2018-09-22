@@ -199,13 +199,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="61" />
-          <entry key="java" value="3624" />
+          <entry key="java" value="3856" />
           <entry key="sql" value="201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3623" />
+          <entry key="JAVA" value="3855" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="201" />
           <entry key="XML" value="61" />
@@ -215,14 +215,14 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="fxml" value="19" />
-          <entry key="java" value="40" />
+          <entry key="java" value="41" />
           <entry key="sql" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JAVA" value="40" />
+          <entry key="JAVA" value="41" />
           <entry key="Scratch" value="8" />
           <entry key="XML" value="19" />
         </counts>
@@ -281,13 +281,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+            <state relative-caret-position="272">
+              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
               <folding>
                 <element signature="method#NextWindow#0;class#HomePageController#0" />
                 <element signature="method#createTablePassword#0;class#HomePageController#0" />
                 <element signature="method#createTableRemember#0;class#HomePageController#0" />
-                <element signature="method#getRememberPassword#0;class#HomePageController#0" />
+                <element signature="method#setRememberPassword#0;class#HomePageController#0" />
                 <element signature="method#setRememberBool#0;class#HomePageController#0" />
                 <element signature="method#getRememberBool#0;class#HomePageController#0" />
               </folding>
@@ -295,11 +295,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
+            <state relative-caret-position="309">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="method#PasswordMatchChecker#0;class#ConnectToBase#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -307,8 +319,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -322,11 +334,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -429,10 +441,10 @@
         <option value="$PROJECT_DIR$/src/sample/UsController.java" />
         <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
         <option value="$PROJECT_DIR$/src/sample/EditAccountController.java" />
-        <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
         <option value="$PROJECT_DIR$/src/sample/RegisterController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
         <option value="$PROJECT_DIR$/src/sample/HomePageController.java" />
       </list>
     </option>
@@ -646,12 +658,12 @@
       <workItem from="1537527859134" duration="4140000" />
       <workItem from="1537614878605" duration="931000" />
       <workItem from="1537616644152" duration="2686000" />
-      <workItem from="1537623346037" duration="15747000" />
+      <workItem from="1537623346037" duration="18208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194792000" />
+    <option name="totallyTimeSpent" value="197253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -666,7 +678,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28322148" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28322148" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -675,7 +687,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2851064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39574468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -687,7 +699,7 @@
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.3291815" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="15" weight="0.3291815" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32907802" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
@@ -716,9 +728,9 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39574468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
@@ -732,7 +744,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24899329" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="4" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1785235" />
+      <window_info anchor="right" id="Database" order="5" weight="0.1785235" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.05910931" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
@@ -964,13 +976,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JAVAFX.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -978,17 +983,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EditAccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="131" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EditAccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1001,37 +1006,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="459">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="method#PasswordMatchChecker#0;class#ConnectToBase#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+        <state relative-caret-position="272">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
           <folding>
             <element signature="method#NextWindow#0;class#HomePageController#0" />
             <element signature="method#createTablePassword#0;class#HomePageController#0" />
             <element signature="method#createTableRemember#0;class#HomePageController#0" />
-            <element signature="method#getRememberPassword#0;class#HomePageController#0" />
+            <element signature="method#setRememberPassword#0;class#HomePageController#0" />
             <element signature="method#setRememberBool#0;class#HomePageController#0" />
             <element signature="method#getRememberBool#0;class#HomePageController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ConnectToBase.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
         </state>
       </provider>
     </entry>
