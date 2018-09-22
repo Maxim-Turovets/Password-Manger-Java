@@ -6,15 +6,17 @@
         <option name="appClass" value="sample.Main" />
         <option name="description" value="" />
         <option name="htmlPlaceholderId" value="" />
-        <option name="title" value="" />
-        <option name="vendor" value="" />
-        <option name="version" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="qw" />
+        <option name="vendor" value="qw" />
+        <option name="version" value="2" />
       </options>
     </properties>
     <root id="root">
       <element id="archive" name="JAVAFX.jar">
         <element id="module-output" name="JAVAFX" />
       </element>
+      <element id="library" level="application" name="sqlite-jdbc-3.20.1" />
     </root>
   </artifact>
 </component>

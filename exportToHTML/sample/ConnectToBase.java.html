@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>ConnectToBase.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ConnectToBase.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">sample</span><span class="s0">;</span>
+
+import <span class="s1">java.sql.Connection</span><span class="s0">;</span>
+import <span class="s1">java.sql.DriverManager</span><span class="s0">;</span>
+import <span class="s1">java.sql.ResultSet</span><span class="s0">;</span>
+import <span class="s1">java.sql.Statement</span><span class="s0">;</span>
+
+
+public class <span class="s1">ConnectToBase {</span>
+
+    <span class="s0">public boolean </span><span class="s1">confirmation</span><span class="s0">;</span>
+
+    public int <span class="s1">PasswordMatchChecker(String pass) {</span>
+        <span class="s0">try </span><span class="s1">{</span>
+            Class.forName(<span class="s2">&quot;org.sqlite.JDBC&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">Connection connection = DriverManager.getConnection(</span><span class="s2">&quot;jdbc:sqlite:DataBase.db&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+            <span class="s1">Statement state = connection.createStatement()</span><span class="s0">;</span>
+            <span class="s1">ResultSet res</span><span class="s0">;</span>
+
+            <span class="s1">String stringSQL = </span><span class="s2">&quot;SELECT ID FROM PasswordTable WHERE Password = '&quot; </span><span class="s1">+ pass + </span><span class="s2">&quot;';&quot;</span><span class="s0">;</span>
+
+            <span class="s1">res = state.executeQuery(stringSQL)</span><span class="s0">;</span>
+            int <span class="s1">id = res.getInt(</span><span class="s3">1</span><span class="s1">)</span><span class="s0">;</span>
+            this<span class="s1">.confirmation = </span><span class="s0">true;</span>
+
+            return <span class="s1">id</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">catch </span><span class="s1">(Exception e) {</span>
+            <span class="s0">this</span><span class="s1">.confirmation = </span><span class="s0">false;</span>
+            <span class="s1">System.out.print(</span><span class="s2">&quot;ERROR&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            return <span class="s3">0</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    }
+
+    <span class="s0">public int </span><span class="s1">Register(String RegisterPass) {</span>
+        <span class="s0">if </span><span class="s1">(RegisterPass.isEmpty() == </span><span class="s0">false</span><span class="s1">) {</span>
+            <span class="s0">try </span><span class="s1">{</span>
+                Class.forName(<span class="s2">&quot;org.sqlite.JDBC&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">Connection connection = DriverManager.getConnection(</span><span class="s2">&quot;jdbc:sqlite:./DDataBase.db&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+                <span class="s1">Statement state = connection.createStatement()</span><span class="s0">;</span>
+
+                <span class="s1">String stringSQL = </span><span class="s2">&quot;INSERT INTO PasswordTable (Password) VALUES ('&quot; </span><span class="s1">+ RegisterPass + </span><span class="s2">&quot;')&quot;</span><span class="s0">;</span>
+                <span class="s1">state.executeQuery(stringSQL)</span><span class="s0">;</span>
+            <span class="s1">} </span><span class="s0">catch </span><span class="s1">(Exception e) {</span>
+                System.out.print(e.getMessage())<span class="s0">;</span>
+            <span class="s1">}</span>
+        }
+        <span class="s0">return </span><span class="s1">PasswordMatchChecker(RegisterPass)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public void </span><span class="s1">CreateTable(</span><span class="s0">int </span><span class="s1">index) {</span>
+        <span class="s0">try </span><span class="s1">{</span>
+            Class.forName(<span class="s2">&quot;org.sqlite.JDBC&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">Connection conn = DriverManager.getConnection(</span><span class="s2">&quot;jdbc:sqlite:DataBaseUser&quot; </span><span class="s1">+ index + </span><span class="s2">&quot;.db&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">Statement state = conn.createStatement()</span><span class="s0">;</span>
+            <span class="s1">String stringSQL = </span><span class="s2">&quot;CREATE TABLE UserTable ( id INTEGER PRIMARY KEY AUTOINCREMENT ,login Varchar (30),   password Varchar (30),   email Varchar (30))&quot;</span><span class="s0">;</span>
+
+            <span class="s1">state.executeUpdate(stringSQL)</span><span class="s0">;</span>
+
+        <span class="s1">} </span><span class="s0">catch </span><span class="s1">(Exception e) {</span>
+            System.out.print(e.getMessage())<span class="s0">;</span>
+        <span class="s1">}</span>
+
+    }
+
+}
+</pre>
+</body>
+</html>

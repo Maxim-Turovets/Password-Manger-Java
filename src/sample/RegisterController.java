@@ -27,12 +27,21 @@ public class RegisterController {
                 if (RegisterPass.getText().trim() == "")
                     System.out.print(RegisterPass.getText());
                 ConnectToBase ob = new ConnectToBase();
+
+
+
                 HomePageController.index = ob.Register(RegisterPass.getText());
+
+                if(HomePageController.index==0)
+                {
+                    HomePageController.index=1;
+                }
+
                 ob.CreateTable(HomePageController.index);
 
 
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(getClass().getResource("main.fxml"));
+                loader.setLocation(getClass().getResource("user.fxml"));
 
                 try {
                     loader.load();

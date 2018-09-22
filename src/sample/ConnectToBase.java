@@ -20,6 +20,7 @@ public class ConnectToBase {
 
             String stringSQL = "SELECT ID FROM PasswordTable WHERE Password = '" + pass + "';";
 
+
             res = state.executeQuery(stringSQL);
             int id = res.getInt(1);
             this.confirmation = true;
@@ -41,9 +42,17 @@ public class ConnectToBase {
                 Statement state = connection.createStatement();
 
                 String stringSQL = "INSERT INTO PasswordTable (Password) VALUES ('" + RegisterPass + "')";
+
+                state.executeUpdate(stringSQL);
+
+                System.out.println(HomePageController.index);
+                connection.close();
+
+
                 state.executeQuery(stringSQL);
+
             } catch (Exception e) {
-                System.out.print(e.getMessage());
+                System.out.print("!!!"+e.getMessage());
             }
         }
         return PasswordMatchChecker(RegisterPass);

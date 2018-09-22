@@ -13,11 +13,15 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 
 public class HomePageController {
 
-    public static int index;
+    public static int index=1;
 
     @FXML
     private PasswordField PassText;
@@ -30,7 +34,7 @@ public class HomePageController {
 
     @FXML
     void initialize() {
-
+       createTablePassword();
 
         ButtonLogin.setOnMouseClicked(event -> {
 
@@ -71,5 +75,20 @@ public class HomePageController {
       //  stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();
+    }
+
+    private void createTablePassword()
+    {
+        try {
+            Class.forName("org.sqlite.JDBC");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:DataBase.db");
+            Statement state = connection.createStatement();
+            String stringSQL = "CREATE TABLE PasswordTable ( ID INTEGER PRIMARY KEY AUTOINCREMENT, Password Varchar (30))";
+            state.executeUpdate(stringSQL);
+            connection.close();
+
+        } catch (Exception e) {
+            System.out.print(e.getMessage()+"  1212");
+        }
     }
 }
