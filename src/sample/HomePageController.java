@@ -39,41 +39,36 @@ public class HomePageController {
     @FXML
     void initialize() {
       //  createTablePassword();
-        createTableRemember();
-        setRememberTable("yes");
+      //  createTableRemember();
+    //    setRememberBool("no");
+         //  setRememberPassword("sdfsdfg");
 
-        if(getRememberTable()==true)
-           System.out.println("qqqqqqqqqqqqqqqqqqqqqqqqqq");
 
-        if (checremember.isSelected())
-        {
-            ButtonLogin.getScene().getWindow().hide();// если пароль правильный
-            ConnectToBase ob = new ConnectToBase();
-            HomePageController.index = ob.PasswordMatchChecker(getRememberPassword());
-            try {
-                NextWindow("user.fxml");
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
-        }
 
-        else
-            {
+
+
             ButtonLogin.setOnMouseClicked(event -> {
                 if (PassText.getText().isEmpty() == false) {
 
                     ConnectToBase ob = new ConnectToBase();
                     HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
-
                     if (ob.confirmation == true) {
-                        ButtonLogin.getScene().getWindow().hide();// если пароль правильный
+                   //     ButtonLogin.getScene().getWindow().hide();// если пароль правильный\
+
+                       setRememberPassword(PassText.getText());
+                     //   setRememberBool("yes");
+                        ButtonLogin.getScene().getWindow().hide();
                         try {
                             NextWindow("user.fxml");
                         } catch (Exception e) {
+                            System.out.println("Не тот пароль ");
                         }
+
                     }
+
                 }
+                System.out.println("222222222222222222222222");
             });
 
             ButtonRegister.setOnAction(event -> {
@@ -85,7 +80,7 @@ public class HomePageController {
                 }
             });
         }
-    }
+
 
     public void NextWindow(String paht) throws IOException {
         Stage stage = new Stage();
@@ -98,7 +93,7 @@ public class HomePageController {
         stage.show();
     }
 
-    private void createTablePassword() {
+    public void createTablePassword() {
         try {
             Class.forName("org.sqlite.JDBC");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:DataBase.db");
@@ -112,13 +107,15 @@ public class HomePageController {
         }
     }
 
-    private void createTableRemember() {
+    public void createTableRemember() {
         try {
             Class.forName("org.sqlite.JDBC");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:DataBase.db");
             Statement state = connection.createStatement();
-            String stringSQL = "CREATE TABLE RememberTable ( ID INTEGER PRIMARY KEY AUTOINCREMENT, Password Varchar (30),Remember VARCHAR (3))";
+            String stringSQL = "CREATE TABLE RememberTable ( ID INTEGER PRIMARY KEY, Password Varchar (30),Remember VARCHAR (3));" +
+                    "INSERT INTO RememberTable (ID) VALUES (1)";
             state.executeUpdate(stringSQL);
+
             connection.close();
 
         } catch (Exception e) {
@@ -138,6 +135,7 @@ public class HomePageController {
             String stringSQL = "Select  password  From  RememberTable   WHERE id=" + 1;
 
             state.executeUpdate(stringSQL);
+            conn.close();
             try {
                 pass = state.executeQuery(stringSQL).getString(1);
             } catch (Exception e) {
@@ -151,7 +149,27 @@ public class HomePageController {
         return pass;
     }
 
-    private void setRememberTable (String str )
+    private void setRememberPassword (String str )
+    {
+        try {
+            Class.forName("org.sqlite.JDBC");
+
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBase.db");
+            Statement state = conn.createStatement();
+
+
+            String stringSQL = "UPDATE  RememberTable SET Password = '"+str+"' WHERE ID=1";
+            state.executeUpdate(stringSQL);
+
+            conn.close();
+
+
+        } catch (Exception e) {
+            System.out.print(e.getMessage()+" | setRememberPassword | ");
+        }
+    }
+
+    private void setRememberBool (String str )
     {
         try {
             Class.forName("org.sqlite.JDBC");
@@ -161,18 +179,18 @@ public class HomePageController {
             UsController ob = new UsController();
 
 
-                String stringSQL = "INSERT INTO  RememberTable ( Remember ) VALUES ('"+str+"')";
+                String stringSQL = "Update  RememberTable SET Remember ='"+str+"' Where id="+1 ;
                 state.executeUpdate(stringSQL);
 
             conn.close();
 
         } catch (Exception e) {
-            System.out.print(e.getMessage());
+            System.out.println(e.getMessage()+"| setRememberBool |");
         }
     }
 
-    private boolean getRememberTable() {
-        boolean rem= true;
+    public String getRememberBool() {
+        String rem= "";
         try {
             Class.forName("org.sqlite.JDBC");
             Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBase.db");
@@ -180,26 +198,31 @@ public class HomePageController {
 
 
             String stringSQL = "Select  Remember  From  RememberTable   WHERE id="+1;
-        //    System.out.println(stringSQL);
-            state.executeUpdate(stringSQL);
+           // state.executeUpdate(stringSQL);
+            String sql=null;
+            try {
+                 sql = state.executeQuery(stringSQL).getString(1);
+            } catch (Exception e) {
+            }
 
-            String sql = state.executeQuery(stringSQL).getString(1);
 
                 if(sql.equals("yes"))
                 {
-                    rem = true;
+                    rem = "yes";
+
                     System.out.println("HHHHHH");
                 }
                 else {
-                    rem = false;
+                    rem = "no";
                     System.out.println("AAAAAAAA");
                 }
 
             conn.close();
 
         } catch (Exception e) {
-            System.out.print(e.getMessage()+22);
-        }
+            System.out.println(e.getMessage()+" | getRememberBool |");
+
+    }
         return rem;
     }
 

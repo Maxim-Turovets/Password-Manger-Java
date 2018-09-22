@@ -24,13 +24,14 @@ public class ConnectToBase {
             res = state.executeQuery(stringSQL);
             int id = res.getInt(1);
             this.confirmation = true;
-
+            connection.close();
             return id;
         } catch (Exception e) {
             this.confirmation = false;
             System.out.print("ERROR");
             return 0;
         }
+
     }
 
     public int Register(String RegisterPass) {
@@ -46,10 +47,11 @@ public class ConnectToBase {
                 state.executeUpdate(stringSQL);
 
                 System.out.println(HomePageController.index);
-                connection.close();
+
 
 
                 state.executeQuery(stringSQL);
+                connection.close();
 
             } catch (Exception e) {
                 System.out.print("!!!"+e.getMessage());
@@ -66,7 +68,7 @@ public class ConnectToBase {
             String stringSQL = "CREATE TABLE UserTable ( id INTEGER PRIMARY KEY AUTOINCREMENT ,login Varchar (30),   password Varchar (30),   email Varchar (30))";
 
             state.executeUpdate(stringSQL);
-
+            conn.close();
         } catch (Exception e) {
             System.out.print(e.getMessage());
         }
