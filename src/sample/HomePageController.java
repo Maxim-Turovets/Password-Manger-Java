@@ -59,7 +59,7 @@ public class HomePageController {
 
             ButtonRegister.getScene().getWindow().hide();
             try {
-                NextWindow("register.fxml");
+                NextWindow("Registr.fxml");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }

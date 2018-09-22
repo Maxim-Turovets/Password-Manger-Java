@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <ImageView fitHeight="620.0" fitWidth="840.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/singbackground.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="RegisterPass" layoutX="314.0" layoutY="391.0" prefHeight="54.0" prefWidth="247.0" promptText="password">
+         <font>
+            <Font name="System Italic" size="21.0" />
+         </font>
+      </PasswordField>
+      <ImageView fx:id="RegisterButton" fitHeight="62.0" fitWidth="302.0" layoutX="269.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/regisretbutton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

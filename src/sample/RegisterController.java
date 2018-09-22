@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,13 +16,15 @@ public class RegisterController {
     @FXML
     private PasswordField RegisterPass;
 
+
+
     @FXML
-    private Button RegisterButton;
+    private ImageView RegisterButton;
 
     @FXML
     void initialize() {
 
-        RegisterButton.setOnAction(event -> {
+        RegisterButton.setOnMouseClicked(event -> {
             if (RegisterPass.getText() != "") {
                 RegisterPass.getScene().getWindow().hide();
                 if (RegisterPass.getText().trim() == "")
