@@ -38,11 +38,6 @@ public class HomePageController {
 
     @FXML
     void initialize() {
-
-
-
-
-        
         ButtonLogin.setOnMouseClicked(event -> {
             if (PassText.getText().isEmpty() == false) {
 
@@ -50,8 +45,9 @@ public class HomePageController {
                 HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
                 if (ob.confirmation == true) {
-                    if(checremember.isSelected()) {
-                        setRememberPassword(PassText.getText());
+
+                   if(checremember.isSelected()) {
+                       setRememberPassword(PassText.getText());
                         setRememberBool("yes");
                     }
                     ButtonLogin.getScene().getWindow().hide();
@@ -62,11 +58,7 @@ public class HomePageController {
                 }
             }
         });
-
-
-
-
-            ButtonRegister.setOnAction(event -> {
+        ButtonRegister.setOnAction(event -> {
                 ButtonRegister.getScene().getWindow().hide();
                 try {
                     NextWindow("Registr.fxml");
@@ -82,7 +74,7 @@ public class HomePageController {
         // stage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource(paht));
         Scene scene = new Scene(root);
-        //   scene.setFill(Color.TRANSPARENT);
+         //  scene.setFill(Color.TRANSPARENT);
         //  stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();

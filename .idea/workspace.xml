@@ -199,13 +199,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="61" />
-          <entry key="java" value="3856" />
+          <entry key="java" value="3926" />
           <entry key="sql" value="201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3855" />
+          <entry key="JAVA" value="3925" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="201" />
           <entry key="XML" value="61" />
@@ -278,15 +278,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            <state relative-caret-position="220">
+              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
-                <element signature="method#NextWindow#0;class#HomePageController#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1787#2057#0" />
                 <element signature="method#createTablePassword#0;class#HomePageController#0" />
                 <element signature="method#createTableRemember#0;class#HomePageController#0" />
+                <element signature="method#getRememberPassword#0;class#HomePageController#0" />
                 <element signature="method#setRememberPassword#0;class#HomePageController#0" />
                 <element signature="method#setRememberBool#0;class#HomePageController#0" />
                 <element signature="method#getRememberBool#0;class#HomePageController#0" />
@@ -298,8 +300,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -319,8 +321,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="203">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -334,11 +336,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="9" />
+            <state>
+              <caret selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -443,8 +445,8 @@
         <option value="$PROJECT_DIR$/src/sample/EditAccountController.java" />
         <option value="$PROJECT_DIR$/src/sample/RegisterController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/HomePageController.java" />
       </list>
     </option>
@@ -658,12 +660,12 @@
       <workItem from="1537527859134" duration="4140000" />
       <workItem from="1537614878605" duration="931000" />
       <workItem from="1537616644152" duration="2686000" />
-      <workItem from="1537623346037" duration="18208000" />
+      <workItem from="1537623346037" duration="19569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197253000" />
+    <option name="totallyTimeSpent" value="198614000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1006,15 +1008,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="203">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        <state>
+          <caret selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1028,25 +1030,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        <state relative-caret-position="220">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
-            <element signature="method#NextWindow#0;class#HomePageController#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1787#2057#0" />
             <element signature="method#createTablePassword#0;class#HomePageController#0" />
             <element signature="method#createTableRemember#0;class#HomePageController#0" />
+            <element signature="method#getRememberPassword#0;class#HomePageController#0" />
             <element signature="method#setRememberPassword#0;class#HomePageController#0" />
             <element signature="method#setRememberBool#0;class#HomePageController#0" />
             <element signature="method#getRememberBool#0;class#HomePageController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
         </state>
       </provider>
     </entry>

@@ -23,7 +23,6 @@ public class Main extends Application {
             HomePageController.index = ob2.PasswordMatchChecker(ob.getRememberPassword());
             System.out.println("  PassRemember == "+ ob.getRememberPassword());
             System.out.println("  INDEX== "+ HomePageController.index);
-        //    ButtonLogin.getScene().getWindow().hide();
             try {
                 ob.NextWindow("user.fxml");
             } catch (Exception e) {
@@ -34,6 +33,7 @@ public class Main extends Application {
         {
             Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
             primaryStage.setTitle("Hello World");
+
             primaryStage.setScene(new Scene(root, 853, 630));
             primaryStage.show();
         }
