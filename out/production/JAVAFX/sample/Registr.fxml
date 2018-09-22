@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
    <children>
-      <ImageView fitHeight="620.0" fitWidth="827.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="628.0" fitWidth="843.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/singbackground.png" />
          </image>
       </ImageView>
-      <PasswordField fx:id="RegisterPass" layoutX="314.0" layoutY="391.0" prefHeight="54.0" prefWidth="247.0" promptText="password">
+      <PasswordField fx:id="RegisterPass" layoutX="316.0" layoutY="384.0" prefHeight="49.0" prefWidth="255.0" promptText="password">
          <font>
             <Font name="System Italic" size="21.0" />
          </font>
@@ -23,17 +23,17 @@
             <Image url="@Images/regisretbutton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="closebutton" fitHeight="21.0" fitWidth="30.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="closebutton" fitHeight="21.0" fitWidth="30.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/closebutton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="collapsebutton" fitHeight="21.0" fitWidth="21.0" layoutX="42.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="collapsebutton" fitHeight="21.0" fitWidth="21.0" layoutX="36.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/collapse.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="70.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="resetbutton" fitHeight="21.0" fitWidth="30.0" layoutX="64.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/green.png" />
          </image>

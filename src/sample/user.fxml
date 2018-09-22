@@ -50,7 +50,7 @@
             <Image url="@Images/collapse.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="21.0" fitWidth="30.0" layoutX="60.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="resetbutton" fitHeight="21.0" fitWidth="30.0" layoutX="60.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/green.png" />
          </image>

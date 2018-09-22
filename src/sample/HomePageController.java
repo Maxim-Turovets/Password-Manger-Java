@@ -9,7 +9,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -27,8 +30,9 @@ public class HomePageController {
     @FXML
     private ImageView ButtonLogin;
 
+
     @FXML
-    private Button ButtonRegister;
+    private ImageView ButtonRegister;
 
     @FXML
     private CheckBox checremember;
@@ -40,7 +44,20 @@ public class HomePageController {
     private ImageView collapsebutton;
 
     @FXML
+    private ImageView resetbutton;
+
+    @FXML
     void initialize() {
+        resetbutton.setOnMouseClicked(event -> {
+            resetbutton.getScene().getWindow().hide();
+            HomePageController homepagecontrollerobject = new HomePageController();
+            homepagecontrollerobject.setRememberBool("no");
+            try {
+                homepagecontrollerobject.NextWindow("homepage.fxml");
+            } catch (Exception e) {
+                System.out.print(e.getMessage());
+            }
+        });
 
         collapsebutton.setOnMouseClicked(event -> {
             Stage stage = (Stage) collapsebutton.getScene().getWindow();
@@ -48,19 +65,20 @@ public class HomePageController {
         });
 
         closebutton.setOnMouseClicked(event -> {
-            closebutton.getScene().getWindow().hide();;
+            closebutton.getScene().getWindow().hide();
+            ;
         });
 
         ButtonLogin.setOnMouseClicked(event -> {
             if (PassText.getText().isEmpty() == false) {
-
+                ButtonRegister.getScene().getWindow().hide();
                 ConnectToBase ob = new ConnectToBase();
                 HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
                 if (ob.confirmation == true) {
 
-                   if(checremember.isSelected()) {
-                       setRememberPassword(PassText.getText());
+                    if (checremember.isSelected()) {
+                        setRememberPassword(PassText.getText());
                         setRememberBool("yes");
                     }
                     ButtonLogin.getScene().getWindow().hide();
@@ -71,26 +89,25 @@ public class HomePageController {
                 }
             }
         });
-        ButtonRegister.setOnAction(event -> {
-               ButtonRegister.getScene().getWindow().hide();
+        ButtonRegister.setOnMouseClicked(event -> {
+            ButtonRegister.getScene().getWindow().hide();
 
-                try {
-                    NextWindow("Registr.fxml");
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                }
-            });
-        }
+            try {
+                NextWindow("Registr.fxml");
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        });
+    }
 
 
     public void NextWindow(String paht) throws IOException {
         Stage stage = new Stage();
-         stage.setResizable(false);
+        stage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource(paht));
         Scene scene = new Scene(root);
-         //  scene.setFill(Color.TRANSPARENT);
-        //  stage.initStyle(StageStyle.TRANSPARENT);
-
+        scene.setFill(Color.TRANSPARENT);
+        stage.initStyle(StageStyle.TRANSPARENT);
 
 
         stage.setScene(scene);
@@ -123,7 +140,7 @@ public class HomePageController {
             connection.close();
 
         } catch (Exception e) {
-            System.out.print(e.getMessage() );
+            System.out.print(e.getMessage());
         }
     }
 
@@ -138,13 +155,13 @@ public class HomePageController {
 
             String stringSQL = "Select  Password  From  RememberTable   WHERE id=1";
 
-           state.executeUpdate(stringSQL);
-         //   conn.close();
+            state.executeUpdate(stringSQL);
+            //   conn.close();
             try {
                 pass = state.executeQuery(stringSQL).getString(1);
             } catch (Exception e) {
             }
-          System.out.println("Remember PAss = "+pass);
+            System.out.println("Remember PAss = " + pass);
             conn.close();
 
         } catch (Exception e) {
@@ -153,8 +170,7 @@ public class HomePageController {
         return pass;
     }
 
-    private void setRememberPassword (String str )
-    {
+    private void setRememberPassword(String str) {
         try {
             Class.forName("org.sqlite.JDBC");
 
@@ -162,19 +178,18 @@ public class HomePageController {
             Statement state = conn.createStatement();
 
 
-            String stringSQL = "UPDATE  RememberTable SET Password = '"+str+"' WHERE ID=1";
+            String stringSQL = "UPDATE  RememberTable SET Password = '" + str + "' WHERE ID=1";
             state.executeUpdate(stringSQL);
 
             conn.close();
 
 
         } catch (Exception e) {
-            System.out.print(e.getMessage()+" | setRememberPassword | ");
+            System.out.print(e.getMessage() + " | setRememberPassword | ");
         }
     }
 
-    private void setRememberBool (String str )
-    {
+    public void setRememberBool(String str) {
         try {
             Class.forName("org.sqlite.JDBC");
 
@@ -183,50 +198,48 @@ public class HomePageController {
             UsController ob = new UsController();
 
 
-                String stringSQL = "Update  RememberTable SET Remember ='"+str+"' Where id="+1 ;
-                state.executeUpdate(stringSQL);
+            String stringSQL = "Update  RememberTable SET Remember ='" + str + "' Where id=" + 1;
+            state.executeUpdate(stringSQL);
 
             conn.close();
 
         } catch (Exception e) {
-            System.out.println(e.getMessage()+"| setRememberBool |");
+            System.out.println(e.getMessage() + "| setRememberBool |");
         }
     }
 
     public String getRememberBool() {
-        String rem= "";
+        String rem = "";
         try {
             Class.forName("org.sqlite.JDBC");
             Connection conn = DriverManager.getConnection("jdbc:sqlite:DataBase.db");
             Statement state = conn.createStatement();
 
 
-            String stringSQL = "Select  Remember  From  RememberTable   WHERE id="+1;
-           // state.executeUpdate(stringSQL);
-            String sql=null;
+            String stringSQL = "Select  Remember  From  RememberTable   WHERE id=" + 1;
+            // state.executeUpdate(stringSQL);
+            String sql = null;
             try {
-                 sql = state.executeQuery(stringSQL).getString(1);
+                sql = state.executeQuery(stringSQL).getString(1);
             } catch (Exception e) {
             }
 
 
-                if(sql.equals("yes"))
-                {
-                    rem = "yes";
+            if (sql.equals("yes")) {
+                rem = "yes";
 
-                    System.out.println("HHHHHH");
-                }
-                else {
-                    rem = "no";
-                    System.out.println("AAAAAAAA");
-                }
+                System.out.println("HHHHHH");
+            } else {
+                rem = "no";
+                System.out.println("AAAAAAAA");
+            }
 
             conn.close();
 
         } catch (Exception e) {
-            System.out.println(e.getMessage()+" | getRememberBool |");
+            System.out.println(e.getMessage() + " | getRememberBool |");
 
-    }
+        }
         return rem;
     }
 

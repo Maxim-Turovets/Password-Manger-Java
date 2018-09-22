@@ -56,12 +56,28 @@ public class UsController {
 
 
     @FXML
+    private ImageView resetbutton;
+
+
+    @FXML
     private void initialize() {
+
+        resetbutton.setOnMouseClicked(event -> {
+            resetbutton.getScene().getWindow().hide();
+            HomePageController homepagecontrollerobject = new HomePageController();
+            homepagecontrollerobject.setRememberBool("no");
+            try {
+                homepagecontrollerobject.NextWindow("homepage.fxml");
+            } catch (Exception e) {
+                System.out.print(e.getMessage());
+            }
+        });
 
         collapsebutton.setOnMouseClicked(event -> {
             Stage stage = (Stage) collapsebutton.getScene().getWindow();
             stage.setIconified(true);
         });
+
        closebutton.setOnMouseClicked(event -> {
            closebutton.getScene().getWindow().hide();;
        });

@@ -28,7 +28,21 @@ public class RegisterController {
     private ImageView collapsebutton;
 
     @FXML
+    private ImageView resetbutton;
+
+    @FXML
     void initialize() {
+        resetbutton.setOnMouseClicked(event -> {
+            resetbutton.getScene().getWindow().hide();
+            HomePageController homepagecontrollerobject = new HomePageController();
+            homepagecontrollerobject.setRememberBool("no");
+            try {
+                homepagecontrollerobject.NextWindow("homepage.fxml");
+            } catch (Exception e) {
+                System.out.print(e.getMessage());
+            }
+        });
+
         collapsebutton.setOnMouseClicked(event -> {
             Stage stage = (Stage) collapsebutton.getScene().getWindow();
             stage.setIconified(true);

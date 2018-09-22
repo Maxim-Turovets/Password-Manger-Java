@@ -4,7 +4,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
@@ -21,12 +23,10 @@ public class Main extends Application {
         {
             ConnectToBase ob2 = new ConnectToBase();
             HomePageController.index = ob2.PasswordMatchChecker(ob.getRememberPassword());
-            System.out.println("  PassRemember == "+ ob.getRememberPassword());
-            System.out.println("  INDEX== "+ HomePageController.index);
             try {
                 ob.NextWindow("user.fxml");
             } catch (Exception e) {
-                System.out.println("Не тот пароль ");
+                System.out.println(e.getMessage());
             }
         }
         else
@@ -35,7 +35,8 @@ public class Main extends Application {
             primaryStage.setTitle("Hello World");
             Scene scene = new Scene(root, 853, 630);
             primaryStage.setScene(scene);
-
+            scene.setFill(Color.TRANSPARENT);
+            primaryStage.initStyle(StageStyle.TRANSPARENT);
             primaryStage.show();
         }
     }
