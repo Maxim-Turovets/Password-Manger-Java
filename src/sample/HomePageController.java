@@ -70,8 +70,7 @@ public class HomePageController {
         });
 
         ButtonLogin.setOnMouseClicked(event -> {
-            if (PassText.getText().isEmpty() == false) {
-                ButtonRegister.getScene().getWindow().hide();
+           if (PassText.getText().isEmpty() == false) {
                 ConnectToBase ob = new ConnectToBase();
                 HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
@@ -87,7 +86,17 @@ public class HomePageController {
                     } catch (Exception e) {
                     }
                 }
+                else {
+                    ErrorWindowController d = new ErrorWindowController();
+                    try {
+                      ErrorWindowController.errorText="Incorrect password. Try again";
+                        NextWindow("errorwindow.fxml");
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
             }
+
         });
         ButtonRegister.setOnMouseClicked(event -> {
             ButtonRegister.getScene().getWindow().hide();
