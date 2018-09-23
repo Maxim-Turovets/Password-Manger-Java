@@ -89,11 +89,13 @@ public class HomePageController {
                 else {
                     ErrorWindowController d = new ErrorWindowController();
                     try {
-                      ErrorWindowController.errorText="Incorrect password. Try again";
+                        ErrorWindowController.errorText="Incorrect password. Try again";
                         NextWindow("errorwindow.fxml");
+
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
+
                 }
             }
 
@@ -117,7 +119,7 @@ public class HomePageController {
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
-
+        stage.setAlwaysOnTop(true);
 
         stage.setScene(scene);
         stage.show();

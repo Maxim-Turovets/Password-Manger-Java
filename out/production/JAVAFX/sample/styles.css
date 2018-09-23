@@ -1,0 +1,53 @@
+
+.my-button {
+    -fx-background-image : url("Images/closebutton.png");
+}
+.my-button:hover {
+  -fx-bolder-color:  #5A48FF;
+  -fx-border-bottom-width : 45;
+}
+
+.table-view{
+   -fx-background-color: #5A48FF;
+   -fx-background-image : url("Images/background.png");
+
+}
+
+.table-view:focused{
+    -fx-background-color: #5A48FF;
+	
+}
+
+.table-view .column-header-background{
+	
+    -fx-background-color: #A89FFF;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: linear-gradient(#373535 70%, #f26e46 100%);
+}
+
+.table-view .column-header {
+	 
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+	-fx-text-fill: #000000; 
+}
+
+
+
+
+.table-row-cell:selected {
+	-fx-background-image : url("Images/table2.png");
+    -fx-background-color: #f26e46;
+    -fx-text-fill: #373535;
+}
+
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+
