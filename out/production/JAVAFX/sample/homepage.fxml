@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.AmbientLight?>
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.image.Image?>
@@ -14,6 +14,9 @@
          <image>
             <Image url="@Images/max.png" />
          </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
       </ImageView>
       <PasswordField fx:id="PassText" layoutX="326.0" layoutY="397.0" prefHeight="49.0" prefWidth="254.0" promptText="Password">
          <font>
@@ -51,6 +54,5 @@
             <Image url="@Images/inf1.png" />
          </image>
       </ImageView>
-      <AmbientLight color="CHARTREUSE" layoutX="426.0" layoutY="161.0" lightOn="true" />
    </children>
 </AnchorPane>

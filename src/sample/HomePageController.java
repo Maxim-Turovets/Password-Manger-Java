@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -46,8 +47,12 @@ public class HomePageController {
     @FXML
     private ImageView resetbutton;
 
+
+
     @FXML
     void initialize() {
+
+
 
         resetbutton.setOnMouseClicked(event -> {
             resetbutton.getScene().getWindow().hide();
@@ -67,11 +72,12 @@ public class HomePageController {
 
         closebutton.setOnMouseClicked(event -> {
             closebutton.getScene().getWindow().hide();
-            ;
+
+
         });
 
         ButtonLogin.setOnMouseClicked(event -> {
-           if (PassText.getText().isEmpty() == false) {
+            if (PassText.getText().isEmpty() == false) {
                 ConnectToBase ob = new ConnectToBase();
                 HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
@@ -86,11 +92,10 @@ public class HomePageController {
                         NextWindow("user.fxml");
                     } catch (Exception e) {
                     }
-                }
-                else {
+                } else {
                     ErrorWindowController d = new ErrorWindowController();
                     try {
-                        ErrorWindowController.errorText="Incorrect password. Try again";
+                        ErrorWindowController.errorText = "Incorrect password. Try again";
                         NextWindow("errorwindow.fxml");
 
                     } catch (Exception e) {
@@ -122,7 +127,7 @@ public class HomePageController {
         stage.setAlwaysOnTop(true);
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
-     //
+        //
 
         stage.setScene(scene);
         stage.show();

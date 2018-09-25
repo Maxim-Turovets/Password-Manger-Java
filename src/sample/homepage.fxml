@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.ProgressIndicator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,6 +14,9 @@
          <image>
             <Image url="@Images/max.png" />
          </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
       </ImageView>
       <PasswordField fx:id="PassText" layoutX="326.0" layoutY="397.0" prefHeight="49.0" prefWidth="254.0" promptText="Password">
          <font>
@@ -51,6 +54,5 @@
             <Image url="@Images/inf1.png" />
          </image>
       </ImageView>
-      <ProgressIndicator fx:id="progres" layoutX="152.0" layoutY="306.0" prefHeight="104.0" prefWidth="148.0" progress="0.0" />
    </children>
 </AnchorPane>
