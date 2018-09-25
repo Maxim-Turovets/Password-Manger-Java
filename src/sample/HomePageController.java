@@ -49,8 +49,6 @@ public class HomePageController {
     @FXML
     void initialize() {
 
-
-
         resetbutton.setOnMouseClicked(event -> {
             resetbutton.getScene().getWindow().hide();
             HomePageController homepagecontrollerobject = new HomePageController();
@@ -103,6 +101,7 @@ public class HomePageController {
             }
 
         });
+
         ButtonRegister.setOnMouseClicked(event -> {
             ButtonRegister.getScene().getWindow().hide();
 
@@ -120,9 +119,10 @@ public class HomePageController {
         stage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource(paht));
         Scene scene = new Scene(root);
+        stage.setAlwaysOnTop(true);
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
-        stage.setAlwaysOnTop(true);
+     //
 
         stage.setScene(scene);
         stage.show();

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.AmbientLight?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.image.Image?>
@@ -50,5 +51,6 @@
             <Image url="@Images/inf1.png" />
          </image>
       </ImageView>
+      <AmbientLight color="CHARTREUSE" layoutX="426.0" layoutY="161.0" lightOn="true" />
    </children>
 </AnchorPane>

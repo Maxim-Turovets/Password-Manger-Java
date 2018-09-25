@@ -183,31 +183,32 @@
     <session id="2073510316">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
-          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="61" />
-          <entry key="java" value="4846" />
+          <entry key="java" value="4870" />
           <entry key="sql" value="201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4845" />
+          <entry key="JAVA" value="4869" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="201" />
           <entry key="XML" value="61" />
@@ -216,7 +217,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="fxml" value="19" />
+          <entry key="fxml" value="20" />
           <entry key="java" value="46" />
           <entry key="sql" value="8" />
         </counts>
@@ -226,7 +227,7 @@
           <entry key="CSS" value="1" />
           <entry key="JAVA" value="46" />
           <entry key="Scratch" value="8" />
-          <entry key="XML" value="19" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -281,14 +282,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/edit_account.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="276" column="28" selection-start-line="276" selection-start-column="28" selection-end-line="276" selection-end-column="28" />
+            <state relative-caret-position="1542">
+              <caret line="121" column="35" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
               <folding>
-                <element signature="e#964#1371#0" />
-                <element signature="e#1416#1547#0" />
-                <element signature="e#1589#1678#0" />
                 <element signature="method#createTablePassword#0;class#HomePageController#0" />
                 <element signature="method#createTableRemember#0;class#HomePageController#0" />
                 <element signature="method#getRememberPassword#0;class#HomePageController#0" />
@@ -303,7 +311,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="697">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
@@ -312,8 +320,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="73" column="11" selection-start-line="64" selection-start-column="8" selection-end-line="73" selection-end-column="11" />
+            <state relative-caret-position="388">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -330,7 +338,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -418,12 +426,12 @@
         <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
         <option value="$PROJECT_DIR$/src/sample/EditAccountController.java" />
         <option value="$PROJECT_DIR$/src/sample/ConnectToBase.java" />
-        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
         <option value="$PROJECT_DIR$/src/sample/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/sample/ErrorWindowController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/HomePageController.java" />
+        <option value="$PROJECT_DIR$/src/sample/UsController.java" />
       </list>
     </option>
   </component>
@@ -487,8 +495,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -503,7 +511,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537707574315" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537895336840" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -640,12 +648,14 @@
       <workItem from="1537654638609" duration="8633000" />
       <workItem from="1537702993212" duration="4228000" />
       <workItem from="1537709669215" duration="4749000" />
-      <workItem from="1537797681518" duration="4449000" />
+      <workItem from="1537797681518" duration="5199000" />
+      <workItem from="1537867614358" duration="278000" />
+      <workItem from="1537887843421" duration="3718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220954000" />
+    <option name="totallyTimeSpent" value="225700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -657,10 +667,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.29932886" />
-      <window_info active="true" id="Structure" order="1" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25167784" />
+      <window_info id="Structure" order="1" weight="0.25302014" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -668,7 +679,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2851064" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39574468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -680,7 +691,7 @@
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
-      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="15" weight="0.3291815" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32907802" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
@@ -872,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/editaccount.fxml" />
     <entry file="file://$PROJECT_DIR$/out/production/JAVAFX/sample/addaccount.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/a.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/f.fxml" />
@@ -917,38 +928,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/edit_account.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="211" selection-start-line="8" selection-start-column="211" selection-end-line="8" selection-end-column="211" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/addaccount.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/register.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/user.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/homepage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AddAccountController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -961,9 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="method#PasswordMatchChecker#0;class#ConnectToBase#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -985,10 +985,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="73" column="11" selection-start-line="64" selection-start-column="8" selection-end-line="73" selection-end-column="11" />
+        <state relative-caret-position="697">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -1002,6 +1002,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JAVAFX.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1009,21 +1016,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/edit_account.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="276" column="28" selection-start-line="276" selection-start-column="28" selection-end-line="276" selection-end-column="28" />
+        <state relative-caret-position="1542">
+          <caret line="121" column="35" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
           <folding>
-            <element signature="e#964#1371#0" />
-            <element signature="e#1416#1547#0" />
-            <element signature="e#1589#1678#0" />
             <element signature="method#createTablePassword#0;class#HomePageController#0" />
             <element signature="method#createTableRemember#0;class#HomePageController#0" />
             <element signature="method#getRememberPassword#0;class#HomePageController#0" />
@@ -1031,13 +1043,6 @@
             <element signature="method#setRememberBool#0;class#HomePageController#0" />
             <element signature="method#getRememberBool#0;class#HomePageController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46aaecb4-108a-47b9-84bc-d4394ebcdcea/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
