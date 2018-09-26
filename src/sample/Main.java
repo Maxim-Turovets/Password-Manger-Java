@@ -24,14 +24,14 @@ public class Main extends Application {
             ConnectToBase ob2 = new ConnectToBase();
             HomePageController.index = ob2.PasswordMatchChecker(ob.getRememberPassword());
             try {
-                ob.NextWindow("user.fxml");
+                ob.NextWindow("./fxmlfiles/user.fxml");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
-        else
+       else
         {
-            Parent root = FXMLLoader.load(getClass().getResource("homepage.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("./fxmlfiles/homepage.fxml"));
             primaryStage.setTitle("Hello World");
             Scene scene = new Scene(root, 853, 630);
             primaryStage.setScene(scene);

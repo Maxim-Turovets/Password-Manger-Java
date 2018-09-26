@@ -67,7 +67,7 @@ public class UsController {
             HomePageController homepagecontrollerobject = new HomePageController();
             homepagecontrollerobject.setRememberBool("no");
             try {
-                homepagecontrollerobject.NextWindow("homepage.fxml");
+                homepagecontrollerobject.NextWindow("./fxmlfiles/homepage.fxml");
             } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
@@ -91,7 +91,7 @@ public class UsController {
             EditButton.getScene().getWindow().hide();
 
             try {
-                controllerobject.NextWindow("edit_account.fxml");
+                controllerobject.NextWindow("./fxmlfiles/edit_account.fxml");
            } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
@@ -113,7 +113,7 @@ public class UsController {
             HomePageController controllerobject = new HomePageController();
             AddAccount.getScene().getWindow().hide();
             try {
-                controllerobject.NextWindow("addaccount.fxml");
+                controllerobject.NextWindow("./fxmlfiles/addaccount.fxml");
             } catch (Exception e) {
             }
         });

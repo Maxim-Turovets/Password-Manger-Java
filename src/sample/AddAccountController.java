@@ -1,5 +1,6 @@
 package sample;
 
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -45,7 +46,7 @@ public class AddAccountController {
 
             HomePageController controllerobject = new HomePageController();
             try{
-                controllerobject.NextWindow("user.fxml");}
+                controllerobject.NextWindow("./fxmlfiles/user.fxml");}
             catch (Exception e){}
         });
 

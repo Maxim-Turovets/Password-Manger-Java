@@ -77,7 +77,7 @@ public class RegisterController {
 
 
                     FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(getClass().getResource("user.fxml"));
+                    loader.setLocation(getClass().getResource("./fxmlfiles/user.fxml"));
 
                     try {
                         loader.load();
@@ -95,7 +95,7 @@ public class RegisterController {
                     ErrorWindowController.errorText= "  Password must be longer \nthan 4 characters. Try again";
 //                    object2.setTextError("sssssss");
                     try {
-                        object.NextWindow("errorwindow.fxml");
+                        object.NextWindow("./fxmlfiles/errorwindow.fxml");
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }

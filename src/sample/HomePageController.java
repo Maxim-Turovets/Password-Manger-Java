@@ -5,10 +5,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.ProgressIndicator;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -30,7 +28,6 @@ public class HomePageController {
 
     @FXML
     private ImageView ButtonLogin;
-
 
     @FXML
     private ImageView ButtonRegister;
@@ -59,7 +56,7 @@ public class HomePageController {
             HomePageController homepagecontrollerobject = new HomePageController();
             homepagecontrollerobject.setRememberBool("no");
             try {
-                homepagecontrollerobject.NextWindow("homepage.fxml");
+                homepagecontrollerobject.NextWindow("./fxmlfiles/homepage.fxml");
             } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
@@ -89,14 +86,14 @@ public class HomePageController {
                     }
                     ButtonLogin.getScene().getWindow().hide();
                     try {
-                        NextWindow("user.fxml");
+                        NextWindow("./fxmlfiles/user.fxml");
                     } catch (Exception e) {
                     }
                 } else {
                     ErrorWindowController d = new ErrorWindowController();
                     try {
                         ErrorWindowController.errorText = "Incorrect password. Try again";
-                        NextWindow("errorwindow.fxml");
+                        NextWindow("./fxmlfiles/errorwindow.fxml");
 
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
@@ -111,7 +108,7 @@ public class HomePageController {
             ButtonRegister.getScene().getWindow().hide();
 
             try {
-                NextWindow("Registr.fxml");
+                NextWindow("./fxmlfiles/Registr.fxml");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }

@@ -39,7 +39,7 @@ public class EditAccountController {
             HomePageController controllerobject = new HomePageController();
             EditBackButton.getScene().getWindow().hide();
             try {
-                controllerobject.NextWindow("user.fxml");
+                controllerobject.NextWindow("./fxmlfiles/user.fxml");
             } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
