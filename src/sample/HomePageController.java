@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -22,6 +23,7 @@ import java.sql.Statement;
 public class HomePageController {
 
     public static int index = 1;
+    public static String usernametext="" ;
 
     @FXML
     private PasswordField PassText;
@@ -45,9 +47,15 @@ public class HomePageController {
     private ImageView resetbutton;
 
 
+    @FXML
+    private TextField UsernameText;
+
+
 
     @FXML
     void initialize() {
+
+
 
 
 
@@ -78,6 +86,7 @@ public class HomePageController {
                 ConnectToBase ob = new ConnectToBase();
                 HomePageController.index = ob.PasswordMatchChecker(PassText.getText());
 
+                HomePageController.usernametext = UsernameText.getText();
                 if (ob.confirmation == true) {
 
                     if (checremember.isSelected()) {
@@ -87,6 +96,8 @@ public class HomePageController {
                     ButtonLogin.getScene().getWindow().hide();
                     try {
                         NextWindow("./fxmlfiles/user.fxml");
+
+
                     } catch (Exception e) {
                     }
                 } else {

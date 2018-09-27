@@ -3,6 +3,7 @@
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -54,5 +55,10 @@
             <Image url="@../Images/inf1.png" />
          </image>
       </ImageView>
+      <TextField fx:id="UsernameText" layoutX="326.0" layoutY="329.0" prefHeight="50.0" prefWidth="254.0" promptText="Username">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>
