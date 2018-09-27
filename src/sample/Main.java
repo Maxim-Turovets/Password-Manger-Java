@@ -38,8 +38,7 @@ public class Main extends Application {
             scene.setFill(Color.TRANSPARENT);
             primaryStage.initStyle(StageStyle.TRANSPARENT);
 
-            //primaryStage.setAlwaysOnTop(true);
-          //  primaryStage.setMaximized(true);
+
 
             primaryStage.show();
         }
