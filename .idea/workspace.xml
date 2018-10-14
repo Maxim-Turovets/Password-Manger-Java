@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="JAVAFX:jar" />
+      <artifact name="JAVAFX" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -183,7 +183,7 @@
     <session id="2073510316">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -203,13 +203,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="177" />
-          <entry key="java" value="5456" />
+          <entry key="java" value="5468" />
           <entry key="sql" value="201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5455" />
+          <entry key="JAVA" value="5467" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="201" />
           <entry key="XML" value="177" />
@@ -276,7 +276,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-394">
+            <state relative-caret-position="218">
               <caret line="123" column="45" lean-forward="true" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
               <folding>
                 <element signature="method#getLogin#0;class#UsController#0" />
@@ -290,11 +290,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="487">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -302,13 +302,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="779">
               <caret line="97" column="43" lean-forward="true" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="82">
@@ -330,8 +330,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-513">
-              <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+            <state relative-caret-position="252">
+              <caret line="136" column="10" lean-forward="true" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createTablePassword#0;class#HomePageController#0" />
@@ -466,12 +466,12 @@
         <option value="$PROJECT_DIR$/src/sample/fxmlfiles/addaccount.fxml" />
         <option value="$PROJECT_DIR$/src/sample/User.java" />
         <option value="$PROJECT_DIR$/src/sample/fxmlfiles/homepage.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/AddAccountController.java" />
         <option value="$PROJECT_DIR$/src/sample/EditAccountController.java" />
-        <option value="$PROJECT_DIR$/src/sample/HomePageController.java" />
         <option value="$PROJECT_DIR$/src/sample/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/sample/UsController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/HomePageController.java" />
       </list>
     </option>
   </component>
@@ -702,12 +702,12 @@
       <workItem from="1538827033612" duration="1433000" />
       <workItem from="1539474600756" duration="23000" />
       <workItem from="1539474692074" duration="3000" />
-      <workItem from="1539475574940" duration="2418000" />
+      <workItem from="1539475574940" duration="3645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239868000" />
+    <option name="totallyTimeSpent" value="241095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,7 +720,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23557048" />
       <window_info id="Structure" order="1" weight="0.25302014" />
@@ -731,7 +730,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2851064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39574468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1033,10 +1032,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="123" column="45" lean-forward="true" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+          <folding>
+            <element signature="method#getLogin#0;class#UsController#0" />
+            <element signature="method#getPass#0;class#UsController#0" />
+            <element signature="method#getEmail#0;class#UsController#0" />
+            <element signature="method#GetValue#0;class#UsController#0" />
+            <element signature="method#DeleteRow#0;class#UsController#0" />
+            <element signature="method#Sort#0;class#UsController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="97" column="43" lean-forward="true" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+        <state relative-caret-position="252">
+          <caret line="136" column="10" lean-forward="true" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createTablePassword#0;class#HomePageController#0" />
@@ -1051,37 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="97" column="43" lean-forward="true" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/UsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-394">
-          <caret line="123" column="45" lean-forward="true" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
-          <folding>
-            <element signature="method#getLogin#0;class#UsController#0" />
-            <element signature="method#getPass#0;class#UsController#0" />
-            <element signature="method#getEmail#0;class#UsController#0" />
-            <element signature="method#GetValue#0;class#UsController#0" />
-            <element signature="method#DeleteRow#0;class#UsController#0" />
-            <element signature="method#Sort#0;class#UsController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="487">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1097,7 @@
               <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
-          <last-edited>JAVAFX:jar</last-edited>
+          <last-edited>JAVAFX</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

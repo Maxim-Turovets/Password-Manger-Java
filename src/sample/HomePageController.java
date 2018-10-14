@@ -97,7 +97,6 @@ public class HomePageController {
                     try {
                         NextWindow("fxmlfiles/user.fxml");
 
-
                     } catch (Exception e) {
                     }
                 } else {
