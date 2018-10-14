@@ -64,7 +64,7 @@ public class HomePageController {
             HomePageController homepagecontrollerobject = new HomePageController();
             homepagecontrollerobject.setRememberBool("no");
             try {
-                homepagecontrollerobject.NextWindow("./fxmlfiles/homepage.fxml");
+                homepagecontrollerobject.NextWindow("fxmlfiles/homepage.fxml");
             } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
@@ -95,7 +95,7 @@ public class HomePageController {
                     }
                     ButtonLogin.getScene().getWindow().hide();
                     try {
-                        NextWindow("./fxmlfiles/user.fxml");
+                        NextWindow("fxmlfiles/user.fxml");
 
 
                     } catch (Exception e) {
@@ -104,7 +104,7 @@ public class HomePageController {
                     ErrorWindowController d = new ErrorWindowController();
                     try {
                         ErrorWindowController.errorText = "Incorrect password. Try again";
-                        NextWindow("./fxmlfiles/errorwindow.fxml");
+                        NextWindow("fxmlfiles/errorwindow.fxml");
 
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
@@ -119,7 +119,7 @@ public class HomePageController {
             ButtonRegister.getScene().getWindow().hide();
 
             try {
-                NextWindow("./fxmlfiles/Registr.fxml");
+                NextWindow("fxmlfiles/Registr.fxml");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }

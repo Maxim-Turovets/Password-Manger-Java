@@ -46,7 +46,7 @@ public class AddAccountController {
 
             HomePageController controllerobject = new HomePageController();
             try{
-                controllerobject.NextWindow("./fxmlfiles/user.fxml");}
+                controllerobject.NextWindow("fxmlfiles/user.fxml");}
             catch (Exception e){}
         });
 

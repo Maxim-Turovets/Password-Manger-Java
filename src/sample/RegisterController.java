@@ -42,7 +42,7 @@ public class RegisterController {
             HomePageController homepagecontrollerobject = new HomePageController();
             homepagecontrollerobject.setRememberBool("no");
             try {
-                homepagecontrollerobject.NextWindow("homepage.fxml");
+                homepagecontrollerobject.NextWindow("fxmlfiles/uhomepage.fxml");
             } catch (Exception e) {
                 System.out.print(e.getMessage());
             }
@@ -77,7 +77,7 @@ public class RegisterController {
 
 
                     FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(getClass().getResource("./fxmlfiles/user.fxml"));
+                    loader.setLocation(getClass().getResource("fxmlfiles/user.fxml"));
 
                     try {
                         loader.load();
@@ -95,7 +95,7 @@ public class RegisterController {
                     ErrorWindowController.errorText= "  Password must be longer \nthan 4 characters. Try again";
 //                    object2.setTextError("sssssss");
                     try {
-                        object.NextWindow("./fxmlfiles/errorwindow.fxml");
+                        object.NextWindow("fxmlfiles/errorwindow.fxml");
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }

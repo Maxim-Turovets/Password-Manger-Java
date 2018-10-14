@@ -19,27 +19,24 @@ public class Main extends Application {
        ob.createTableRemember();
        ob.createTablePassword();
 
-        if(ob.getRememberBool().equals("yes"))
+       if(ob.getRememberBool().equals("yes"))
         {
             ConnectToBase ob2 = new ConnectToBase();
             HomePageController.index = ob2.PasswordMatchChecker(ob.getRememberPassword());
             try {
-                ob.NextWindow("./fxmlfiles/user.fxml");
+                ob.NextWindow("fxmlfiles/user.fxml");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
-       else
+ else
         {
-            Parent root = FXMLLoader.load(getClass().getResource("./fxmlfiles/homepage.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fxmlfiles/homepage.fxml"));
             primaryStage.setTitle("Hello World");
             Scene scene = new Scene(root, 853, 630);
             primaryStage.setScene(scene);
             scene.setFill(Color.TRANSPARENT);
             primaryStage.initStyle(StageStyle.TRANSPARENT);
-
-
-
             primaryStage.show();
         }
     }
